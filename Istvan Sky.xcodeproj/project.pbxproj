@@ -35,6 +35,8 @@
 		B0B042852B7DDA8E1372682C /* HealingMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 051EF7479EA08DFAD5777C9A /* HealingMusicViewController.xib */; };
 		B5F5A89E62ECF92B4BB4039A /* MainMenuBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6E006A90CBCFD77E725E9 /* MainMenuBuilder.swift */; };
 		BF75EE7F16BA25073BA6713A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB89EC85B5DE20A69113083D /* HomePresenter.swift */; };
+		D10BDFE221E543A9007BFA69 /* Istvan_SkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BDFE121E543A9007BFA69 /* Istvan_SkyUITests.swift */; };
+		D10BDFEA21E543CA007BFA69 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BDFE921E543CA007BFA69 /* SnapshotHelper.swift */; };
 		D12FDE4D21E23E47006646DF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FDE4C21E23E47006646DF /* BaseViewController.swift */; };
 		D12FDE5021E260B8006646DF /* MeditationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FDE4F21E260B8006646DF /* MeditationDetailsViewController.swift */; };
 		D12FDE5421E27B52006646DF /* FLMediaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D12FDE5321E27B52006646DF /* FLMediaTableViewCell.xib */; };
@@ -110,6 +112,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D10BDFE421E543A9007BFA69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D137315B21D16B8B0052C259 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D137316221D16B8B0052C259;
+			remoteInfo = "Istvan Sky";
+		};
 		D148FC1921DD462D00396068 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D137315B21D16B8B0052C259 /* Project object */;
@@ -152,6 +161,10 @@
 		C8DD62D0A0A3AE76DC6AFE13 /* DonateInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DonateInteractor.swift; sourceTree = "<group>"; };
 		CB89EC85B5DE20A69113083D /* HomePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		CC146B5C4CC0BFB575852135 /* DonateRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DonateRouter.swift; sourceTree = "<group>"; };
+		D10BDFDF21E543A9007BFA69 /* Istvan SkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Istvan SkyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10BDFE121E543A9007BFA69 /* Istvan_SkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Istvan_SkyUITests.swift; sourceTree = "<group>"; };
+		D10BDFE321E543A9007BFA69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10BDFE921E543CA007BFA69 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		D12FDE4C21E23E47006646DF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D12FDE4F21E260B8006646DF /* MeditationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationDetailsViewController.swift; sourceTree = "<group>"; };
 		D12FDE5321E27B52006646DF /* FLMediaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLMediaTableViewCell.xib; sourceTree = "<group>"; };
@@ -230,6 +243,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D10BDFDC21E543A9007BFA69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D137316021D16B8B0052C259 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -559,6 +579,16 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		D10BDFE021E543A9007BFA69 /* Istvan SkyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D10BDFE921E543CA007BFA69 /* SnapshotHelper.swift */,
+				D10BDFE121E543A9007BFA69 /* Istvan_SkyUITests.swift */,
+				D10BDFE321E543A9007BFA69 /* Info.plist */,
+			);
+			path = "Istvan SkyUITests";
+			sourceTree = "<group>";
+		};
 		D12FDE4E21E241C7006646DF /* GestureRecognizers */ = {
 			isa = PBXGroup;
 			children = (
@@ -572,6 +602,7 @@
 			children = (
 				D137316521D16B8B0052C259 /* Istvan Sky */,
 				D148FC1521DD462D00396068 /* Istvan SkyTests */,
+				D10BDFE021E543A9007BFA69 /* Istvan SkyUITests */,
 				D137316421D16B8B0052C259 /* Products */,
 				ADA774C9DE17754B248356AC /* Pods */,
 				8DB29B02B0D64115828A4A72 /* Frameworks */,
@@ -583,6 +614,7 @@
 			children = (
 				D137316321D16B8B0052C259 /* Istvan Sky.app */,
 				D148FC1421DD462C00396068 /* Istvan SkyTests.xctest */,
+				D10BDFDF21E543A9007BFA69 /* Istvan SkyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -844,6 +876,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D10BDFDE21E543A9007BFA69 /* Istvan SkyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10BDFE821E543A9007BFA69 /* Build configuration list for PBXNativeTarget "Istvan SkyUITests" */;
+			buildPhases = (
+				D10BDFDB21E543A9007BFA69 /* Sources */,
+				D10BDFDC21E543A9007BFA69 /* Frameworks */,
+				D10BDFDD21E543A9007BFA69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10BDFE521E543A9007BFA69 /* PBXTargetDependency */,
+			);
+			name = "Istvan SkyUITests";
+			productName = "Istvan SkyUITests";
+			productReference = D10BDFDF21E543A9007BFA69 /* Istvan SkyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		D137316221D16B8B0052C259 /* Istvan Sky */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D137317521D16B8D0052C259 /* Build configuration list for PBXNativeTarget "Istvan Sky" */;
@@ -892,6 +942,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = GMBN;
 				TargetAttributes = {
+					D10BDFDE21E543A9007BFA69 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D137316221D16B8B0052C259;
+					};
 					D137316221D16B8B0052C259 = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
@@ -924,11 +978,19 @@
 			targets = (
 				D137316221D16B8B0052C259 /* Istvan Sky */,
 				D148FC1321DD462C00396068 /* Istvan SkyTests */,
+				D10BDFDE21E543A9007BFA69 /* Istvan SkyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D10BDFDD21E543A9007BFA69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D137316121D16B8B0052C259 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1031,6 +1093,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D10BDFDB21E543A9007BFA69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10BDFE221E543A9007BFA69 /* Istvan_SkyUITests.swift in Sources */,
+				D10BDFEA21E543CA007BFA69 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D137315F21D16B8B0052C259 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1130,6 +1201,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D10BDFE521E543A9007BFA69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D137316221D16B8B0052C259 /* Istvan Sky */;
+			targetProxy = D10BDFE421E543A9007BFA69 /* PBXContainerItemProxy */;
+		};
 		D148FC1A21DD462D00396068 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D137316221D16B8B0052C259 /* Istvan Sky */;
@@ -1157,6 +1233,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D10BDFE621E543A9007BFA69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86U5Z8HYB;
+				INFOPLIST_FILE = "Istvan SkyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghimbovschi.Istvan-SkyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Istvan Sky";
+			};
+			name = Debug;
+		};
+		D10BDFE721E543A9007BFA69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86U5Z8HYB;
+				INFOPLIST_FILE = "Istvan SkyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghimbovschi.Istvan-SkyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Istvan Sky";
+			};
+			name = Release;
+		};
 		D137317321D16B8D0052C259 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1368,6 +1482,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D10BDFE821E543A9007BFA69 /* Build configuration list for PBXNativeTarget "Istvan SkyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10BDFE621E543A9007BFA69 /* Debug */,
+				D10BDFE721E543A9007BFA69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D137315E21D16B8B0052C259 /* Build configuration list for PBXProject "Istvan Sky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

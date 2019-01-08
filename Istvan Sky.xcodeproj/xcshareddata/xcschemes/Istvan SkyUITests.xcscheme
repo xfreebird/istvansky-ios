@@ -32,16 +32,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D148FC1321DD462C00396068"
-               BuildableName = "Istvan SkyTests.xctest"
-               BlueprintName = "Istvan SkyTests"
-               ReferencedContainer = "container:Istvan Sky.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "D10BDFDE21E543A9007BFA69"
                BuildableName = "Istvan SkyUITests.xctest"
                BlueprintName = "Istvan SkyUITests"
@@ -71,8 +61,7 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D137316221D16B8B0052C259"
@@ -80,7 +69,7 @@
             BlueprintName = "Istvan Sky"
             ReferencedContainer = "container:Istvan Sky.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,8 +79,7 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D137316221D16B8B0052C259"
@@ -99,7 +87,7 @@
             BlueprintName = "Istvan Sky"
             ReferencedContainer = "container:Istvan Sky.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
