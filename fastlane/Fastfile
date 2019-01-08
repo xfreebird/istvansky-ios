@@ -1,0 +1,24 @@
+default_platform :ios
+
+platform :ios do
+  before_all do
+    en_ci_utils_init
+  end
+
+  # example with match
+  lane :build do
+  	cocoapods
+    en_setup_keychain
+    en_setup_project
+    match
+    gym
+  end
+
+  after_all do |lane|
+    en_remove_keychain
+  end
+
+  error do |lane, exception|
+    en_remove_keychain
+  end
+end

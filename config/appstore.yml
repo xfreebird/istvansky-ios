@@ -1,0 +1,16 @@
+Istvan Sky.xcodeproj:
+  common:
+    CODE_SIGN_IDENTITY: iOS Distribution
+    DEVELOPMENT_TEAM: H86U5Z8HYB
+    CODE_SIGN_STYLE: Manual
+    BUNDLE_ID: com.istvansky.app.ios
+  targets:
+    Istvan Sky:
+      PRODUCT_BUNDLE_IDENTIFIER: ${BUNDLE_ID}
+      PROVISIONING_PROFILE_SPECIFIER: match AppStore $(PRODUCT_BUNDLE_IDENTIFIER)
+
+Istvan Sky/Info.plist:
+  CFBundleDisplayName: Istvan Sky
+
+Istvan Sky/FastlaneDemo.entitlements:
+  aps-environment: production

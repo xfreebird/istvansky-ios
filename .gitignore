@@ -16,6 +16,27 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+**/xcuserdata/
+.DS_Store
+
+## Pods
+Pods/
+
+##IntelliJ
+.idea
+.editorconfig
+
+## Bundler
+vendor/
+.bundle/
+
+## Other
+*.DS_Store
+.env.path
+.log.txt
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
 
 ## Other
 *.moved-aside

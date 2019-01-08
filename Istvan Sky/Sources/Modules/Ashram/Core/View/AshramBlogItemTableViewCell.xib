@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="269" id="KGk-i7-Jjw" customClass="AshramBlogItemTableViewCell" customModule="Istvan_Sky" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="279.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Best music and singing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdA-cB-o9Z">
+                        <rect key="frame" x="9" y="11" width="302" height="23"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 Dec, 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uzm-ef-hgQ">
+                        <rect key="frame" x="9" y="42" width="302" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnj-dN-Bqu">
+                        <rect key="frame" x="9" y="79.5" width="302" height="172"/>
+                        <string key="text">The Song of the Butterfly - Amazing message from the Sky He talks about the secrets of the healing sounds like this: “The healing sound is born in a deep meditative state. Just sit in silence in nature. Let the ancient cosmic harmony probe deeply into your heart....</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tap to read more" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7o-OO-GVd">
+                        <rect key="frame" x="9" y="259.5" width="302" height="15"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fnj-dN-Bqu" firstAttribute="top" secondItem="Uzm-ef-hgQ" secondAttribute="bottom" constant="16" id="4SM-Tk-Iet"/>
+                    <constraint firstItem="q7o-OO-GVd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="99u-tk-iWF"/>
+                    <constraint firstAttribute="trailing" secondItem="LdA-cB-o9Z" secondAttribute="trailing" constant="9" id="Gmr-jV-zyc"/>
+                    <constraint firstAttribute="bottom" secondItem="q7o-OO-GVd" secondAttribute="bottom" constant="5" id="Lv5-Dd-k6g"/>
+                    <constraint firstItem="LdA-cB-o9Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="UGt-fN-Tk7"/>
+                    <constraint firstItem="Uzm-ef-hgQ" firstAttribute="top" secondItem="LdA-cB-o9Z" secondAttribute="bottom" constant="8" id="Ujp-bR-kZV"/>
+                    <constraint firstItem="fnj-dN-Bqu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="aXI-SE-rP4"/>
+                    <constraint firstAttribute="trailing" secondItem="fnj-dN-Bqu" secondAttribute="trailing" constant="9" id="c86-LO-SD1"/>
+                    <constraint firstItem="q7o-OO-GVd" firstAttribute="top" secondItem="fnj-dN-Bqu" secondAttribute="bottom" constant="8" id="gbm-60-rK1"/>
+                    <constraint firstAttribute="trailing" secondItem="Uzm-ef-hgQ" secondAttribute="trailing" constant="9" id="mti-v2-i3d"/>
+                    <constraint firstAttribute="trailing" secondItem="q7o-OO-GVd" secondAttribute="trailing" constant="9" id="srd-9k-6xq"/>
+                    <constraint firstItem="Uzm-ef-hgQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="u8f-Xv-1Tu"/>
+                    <constraint firstItem="LdA-cB-o9Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="wwk-3o-vux"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="Uzm-ef-hgQ" id="j6T-AJ-8pB"/>
+                <outlet property="descriptionLabel" destination="fnj-dN-Bqu" id="dFU-li-xh4"/>
+                <outlet property="readMoreLabel" destination="q7o-OO-GVd" id="YL3-bC-4eA"/>
+                <outlet property="titleLabel" destination="LdA-cB-o9Z" id="A6t-MJ-szV"/>
+            </connections>
+            <point key="canvasLocation" x="83.200000000000003" y="4.0479760119940034"/>
+        </tableViewCell>
+    </objects>
+</document>

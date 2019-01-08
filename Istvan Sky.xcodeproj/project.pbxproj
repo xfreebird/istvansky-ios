@@ -1,0 +1,1401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07864E036235038C59F9A515 /* TourEventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7881AE79759F20139433745A /* TourEventsPresenter.swift */; };
+		0897399965B7578AD519241C /* MoreBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53C758DF01494BA1C0C817E /* MoreBuilder.swift */; };
+		0EB099CA3DC0FBBA618C1A47 /* AshramRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F6FB8A265A315D30622CE /* AshramRouter.swift */; };
+		126DF130ED42C3CB6396444D /* MorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6B2480C4DECA7C7ED7DD5 /* MorePresenter.swift */; };
+		17E187DB4AF3E3253CA416BC /* HealingMusicInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67647690A86FECABF6E3304C /* HealingMusicInteractor.swift */; };
+		19B916D2F6702CFA4119D20D /* TourEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26185AD41113E4BB8EEDFC47 /* TourEventsViewController.swift */; };
+		29EE10DDE2019D5814230858 /* libPods-Istvan Sky.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD5159AF5AB59114433157E /* libPods-Istvan Sky.a */; };
+		303E0886E8B239BCD204A23D /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E3D17554D091DA2705C869 /* HomeBuilder.swift */; };
+		30D70F40C45A8AE9AEB9697B /* TourEventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B0C1AD9DC9781F35E12FC /* TourEventsRouter.swift */; };
+		3D6A850AC0059A838924EDD3 /* HealingMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3889B1EDF2AA0E0CB3EC /* HealingMusicViewController.swift */; };
+		4312C234C83849BA7E62D107 /* TourEventsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95659584308E26CB167EF12 /* TourEventsInteractor.swift */; };
+		4876302BC40770B8E100E75C /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F154704F4FF98D08DC944549 /* MoreViewController.xib */; };
+		492F6919C557BF126E9FA217 /* HealingMusicPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09009EBE277FA174AB8FDA7F /* HealingMusicPresenter.swift */; };
+		52838879152D4A7B5D7A5D55 /* MainMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBAA4ADB40830F70B4C058 /* MainMenuPresenter.swift */; };
+		53B6CC5C40AA330D5E16DC20 /* MainMenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE5024125C24ECB271D3F8 /* MainMenuInteractor.swift */; };
+		75A777CCA4C0C9E673EE56BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0513D8333A9D9ED8C1F25 /* HomeViewController.swift */; };
+		7D597A2B28717A8518899D25 /* MoreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF96F40F2564A5A26B33C6D /* MoreInteractor.swift */; };
+		7EA4E488F2C798AF2481B53E /* DonateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD62D0A0A3AE76DC6AFE13 /* DonateInteractor.swift */; };
+		868DF0CBD846307F5A018BB6 /* AshramBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3876EAD2A3D22F688A89DDA6 /* AshramBuilder.swift */; };
+		897ABF9CE00D8C9E0D4E67E4 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEC539E9F2E3FF8609F1F32 /* MainMenuViewController.swift */; };
+		943D37497121641F366D55DF /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC3B6C35665C06F2C14043 /* MoreViewController.swift */; };
+		9D09C5843B9B2732A5D5A7CA /* AshramPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A90EE0DFC67877F372E7B /* AshramPresenter.swift */; };
+		9F926DA245E75E0DB2DC6E55 /* DonatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED7489385102DD576EF6297 /* DonatePresenter.swift */; };
+		A5B04D2A3AD1080D58CE89DA /* DonateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EE602F4871E5F25C7ED1DE /* DonateBuilder.swift */; };
+		A7D65EC3617F8A05BAF920FD /* MoreRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87015C5BDD345C0FEC87F5BD /* MoreRouter.swift */; };
+		B0B042852B7DDA8E1372682C /* HealingMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 051EF7479EA08DFAD5777C9A /* HealingMusicViewController.xib */; };
+		B5F5A89E62ECF92B4BB4039A /* MainMenuBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6E006A90CBCFD77E725E9 /* MainMenuBuilder.swift */; };
+		BF75EE7F16BA25073BA6713A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB89EC85B5DE20A69113083D /* HomePresenter.swift */; };
+		D12FDE4D21E23E47006646DF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FDE4C21E23E47006646DF /* BaseViewController.swift */; };
+		D12FDE5021E260B8006646DF /* MeditationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FDE4F21E260B8006646DF /* MeditationDetailsViewController.swift */; };
+		D12FDE5421E27B52006646DF /* FLMediaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D12FDE5321E27B52006646DF /* FLMediaTableViewCell.xib */; };
+		D12FDE5A21E2950D006646DF /* FLMediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FDE5921E2950D006646DF /* FLMediaTableViewCell.swift */; };
+		D137316721D16B8B0052C259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D137316621D16B8B0052C259 /* AppDelegate.swift */; };
+		D137317121D16B8D0052C259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D137316F21D16B8D0052C259 /* LaunchScreen.storyboard */; };
+		D137318221D4E7D70052C259 /* FLBasicItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D137318021D4E7D70052C259 /* FLBasicItemCollectionViewCell.swift */; };
+		D137318321D4E7D80052C259 /* FLBasicItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D137318121D4E7D70052C259 /* FLBasicItemCollectionViewCell.xib */; };
+		D137319821D510360052C259 /* FLCollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D137319621D510360052C259 /* FLCollectionViewTableViewCell.swift */; };
+		D137319921D510360052C259 /* FLCollectionViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D137319721D510360052C259 /* FLCollectionViewTableViewCell.xib */; };
+		D137319C21D52A380052C259 /* FLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D137319A21D52A380052C259 /* FLTableViewCell.swift */; };
+		D137319D21D52A380052C259 /* FLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D137319B21D52A380052C259 /* FLTableViewCell.xib */; };
+		D13731A821D5635A0052C259 /* AshramBlogItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13731A621D5635A0052C259 /* AshramBlogItemTableViewCell.swift */; };
+		D13731A921D5635A0052C259 /* AshramBlogItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D13731A721D5635A0052C259 /* AshramBlogItemTableViewCell.xib */; };
+		D13731AC21D565710052C259 /* AshramBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13731AA21D565710052C259 /* AshramBlogViewController.swift */; };
+		D13731AD21D565710052C259 /* AshramBlogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D13731AB21D565710052C259 /* AshramBlogViewController.xib */; };
+		D13731B021D56E280052C259 /* TourEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13731AE21D56E280052C259 /* TourEventTableViewCell.swift */; };
+		D13731B121D56E280052C259 /* TourEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D13731AF21D56E280052C259 /* TourEventTableViewCell.xib */; };
+		D148FBF021DAC55800396068 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D148FBEF21DAC55800396068 /* GoogleService-Info.plist */; };
+		D148FBF221DC113900396068 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FBF121DC113900396068 /* ItemDetailsViewController.swift */; };
+		D148FBF621DCBDD200396068 /* BasicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FBF521DCBDD200396068 /* BasicItem.swift */; };
+		D148FBF821DCC07300396068 /* LocalizedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FBF721DCC07300396068 /* LocalizedValue.swift */; };
+		D148FC0421DCFD6600396068 /* BasicItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC0321DCFD6600396068 /* BasicItemType.swift */; };
+		D148FC0721DD09B900396068 /* NSLocaleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC0621DD09B900396068 /* NSLocaleUtils.swift */; };
+		D148FC0921DD140C00396068 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC0821DD140C00396068 /* DateUtils.swift */; };
+		D148FC0B21DD15EE00396068 /* DateFormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC0A21DD15EE00396068 /* DateFormatterUtils.swift */; };
+		D148FC0E21DD39D700396068 /* ContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC0D21DD39D700396068 /* ContentService.swift */; };
+		D148FC1721DD462D00396068 /* Istvan_SkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC1621DD462D00396068 /* Istvan_SkyTests.swift */; };
+		D148FC2021DD4C1900396068 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC1F21DD4C1900396068 /* EntryViewController.swift */; };
+		D148FC2221DD663E00396068 /* ServicesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC2121DD663E00396068 /* ServicesContainer.swift */; };
+		D148FC2521DE83D400396068 /* FLCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC2421DE83D400396068 /* FLCollectionViewDataSource.swift */; };
+		D148FC2921DE945F00396068 /* FLTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC2821DE945F00396068 /* FLTableViewDataSource.swift */; };
+		D148FC2B21DE9ED900396068 /* UIImageViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC2A21DE9ED900396068 /* UIImageViewUtils.swift */; };
+		D148FC2D21DEB1E900396068 /* BasicItemUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC2C21DEB1E900396068 /* BasicItemUtils.swift */; };
+		D148FC3121DF96A500396068 /* FLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC3021DF96A500396068 /* FLViewModel.swift */; };
+		D148FC3321DF98F100396068 /* FRProxyDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC3221DF98F100396068 /* FRProxyDataPresenter.swift */; };
+		D148FC3521DFA09300396068 /* FLTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC3421DFA09300396068 /* FLTableViewDelegate.swift */; };
+		D148FC3721DFA52E00396068 /* FLCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC3621DFA52E00396068 /* FLCollectionViewDelegate.swift */; };
+		D148FC5721DFE0BF00396068 /* UIColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC5621DFE0BF00396068 /* UIColorUtils.swift */; };
+		D148FC5921DFEE0900396068 /* TourEventsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC5821DFEE0900396068 /* TourEventsDataSource.swift */; };
+		D148FC5B21DFEEFB00396068 /* TourEventsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC5A21DFEEFB00396068 /* TourEventsDelegate.swift */; };
+		D148FC5F21E09E1E00396068 /* TimeZoneUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FC5E21E09E1E00396068 /* TimeZoneUtils.swift */; };
+		D16FE5FE21E3F18100282E9A /* MoreTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16FE5FD21E3F18100282E9A /* MoreTableViewDataSource.swift */; };
+		D16FE60021E3F19200282E9A /* MoreTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16FE5FF21E3F19200282E9A /* MoreTableViewDelegate.swift */; };
+		D16FE60521E4043600282E9A /* HTMLFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16FE60421E4043600282E9A /* HTMLFileViewController.swift */; };
+		D16FE60721E4058000282E9A /* BundleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16FE60621E4058000282E9A /* BundleUtils.swift */; };
+		D16FE60921E407F400282E9A /* appdata in Resources */ = {isa = PBXBuildFile; fileRef = D16FE60821E407F400282E9A /* appdata */; };
+		D1705BC721E0E144000A2DEA /* AshramBlogViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1705BC621E0E144000A2DEA /* AshramBlogViewDataSource.swift */; };
+		D1705BC921E0E15E000A2DEA /* AshramBlogViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1705BC821E0E15E000A2DEA /* AshramBlogViewDelegate.swift */; };
+		D1705BCB21E12A6C000A2DEA /* AshramBlogHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1705BCA21E12A6C000A2DEA /* AshramBlogHeaderView.swift */; };
+		D1705BCF21E14CEE000A2DEA /* AshramBlogItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1705BCE21E14CEE000A2DEA /* AshramBlogItemDetailsViewController.swift */; };
+		D1705BD121E161C3000A2DEA /* FeedItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1705BD021E161C3000A2DEA /* FeedItemDetailsViewController.swift */; };
+		D195596121D5790F002D7FA4 /* TourEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D195595F21D5790F002D7FA4 /* TourEventsViewController.xib */; };
+		D195596C21D67E8C002D7FA4 /* AboutIstvanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D195596A21D67E8C002D7FA4 /* AboutIstvanViewController.swift */; };
+		D195597121D6937A002D7FA4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D195596F21D6937A002D7FA4 /* HomeViewController.xib */; };
+		D195599621D6AC08002D7FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D195599421D6AC08002D7FA4 /* Main.storyboard */; };
+		D1A1F8CF21E1E6B0004B8C87 /* UIButtonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F8CE21E1E6B0004B8C87 /* UIButtonUtils.swift */; };
+		D1A1F8D121E21F06004B8C87 /* ExtendedSFSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F8D021E21F06004B8C87 /* ExtendedSFSafariViewController.swift */; };
+		D1A1F8D521E23AD6004B8C87 /* InteractivePopRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F8D421E23AD6004B8C87 /* InteractivePopRecognizer.swift */; };
+		D1A1F8D721E23BCC004B8C87 /* ExtendedUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F8D621E23BCC004B8C87 /* ExtendedUINavigationController.swift */; };
+		D1EF0F4721E49CD1009D6EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EF0F4621E49CD1009D6EC6 /* Assets.xcassets */; };
+		D1EF0F4921E4ECC1009D6EC6 /* FileManagerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF0F4821E4ECC1009D6EC6 /* FileManagerUtils.swift */; };
+		D1F6CDB621E3B9910026AFB6 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F6CDB421E3B9910026AFB6 /* DonateViewController.swift */; };
+		D1F6CDB721E3B9910026AFB6 /* DonateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1F6CDB521E3B9910026AFB6 /* DonateViewController.xib */; };
+		D88DDED0CD9A0A83797D59C4 /* DonateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC146B5C4CC0BFB575852135 /* DonateRouter.swift */; };
+		E3B7D6509608F8EFC3614F17 /* TourEventsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811519667A7ABC6D6EC2ABE /* TourEventsBuilder.swift */; };
+		F7371F5FB943C5410A1B7C45 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38732221DE610F6400BFFE56 /* HomeRouter.swift */; };
+		F91C5F37F1FA9F3F511A0865 /* AshramInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CBDB2EAD3F36B7FE37BAF /* AshramInteractor.swift */; };
+		FCD976EBFDE66FCA399DAE56 /* MainMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB4AEAF893DF638AE620C70 /* MainMenuRouter.swift */; };
+		FE90D1CCAF37D520BDFA528A /* HealingMusicBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94CE5F34153EE17CFBD2F96 /* HealingMusicBuilder.swift */; };
+		FEDC168F739433ACE90D3BF6 /* HealingMusicRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5741B0D2BF2CFC5A3B7E5D5A /* HealingMusicRouter.swift */; };
+		FFFD5DAF142A4C9CB76262AF /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7AB1A7163F85FDD77C5759 /* HomeInteractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D148FC1921DD462D00396068 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D137315B21D16B8B0052C259 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D137316221D16B8B0052C259;
+			remoteInfo = "Istvan Sky";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		051EF7479EA08DFAD5777C9A /* HealingMusicViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = HealingMusicViewController.xib; sourceTree = "<group>"; };
+		09009EBE277FA174AB8FDA7F /* HealingMusicPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealingMusicPresenter.swift; sourceTree = "<group>"; };
+		0B7F6FB8A265A315D30622CE /* AshramRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AshramRouter.swift; sourceTree = "<group>"; };
+		0E830AB91B4EF82FA5F71BF6 /* Pods-Istvan Sky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Istvan Sky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Istvan Sky/Pods-Istvan Sky.release.xcconfig"; sourceTree = "<group>"; };
+		12EE602F4871E5F25C7ED1DE /* DonateBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DonateBuilder.swift; sourceTree = "<group>"; };
+		1FEBAA4ADB40830F70B4C058 /* MainMenuPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainMenuPresenter.swift; sourceTree = "<group>"; };
+		21E3D17554D091DA2705C869 /* HomeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		26185AD41113E4BB8EEDFC47 /* TourEventsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TourEventsViewController.swift; sourceTree = "<group>"; };
+		2811519667A7ABC6D6EC2ABE /* TourEventsBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TourEventsBuilder.swift; sourceTree = "<group>"; };
+		2AFC3B6C35665C06F2C14043 /* MoreViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		2F7AB1A7163F85FDD77C5759 /* HomeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		2FCE5024125C24ECB271D3F8 /* MainMenuInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainMenuInteractor.swift; sourceTree = "<group>"; };
+		378F3889B1EDF2AA0E0CB3EC /* HealingMusicViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealingMusicViewController.swift; sourceTree = "<group>"; };
+		38732221DE610F6400BFFE56 /* HomeRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		3876EAD2A3D22F688A89DDA6 /* AshramBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AshramBuilder.swift; sourceTree = "<group>"; };
+		4BB4AEAF893DF638AE620C70 /* MainMenuRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainMenuRouter.swift; sourceTree = "<group>"; };
+		4D4B0C1AD9DC9781F35E12FC /* TourEventsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TourEventsRouter.swift; sourceTree = "<group>"; };
+		5741B0D2BF2CFC5A3B7E5D5A /* HealingMusicRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealingMusicRouter.swift; sourceTree = "<group>"; };
+		67647690A86FECABF6E3304C /* HealingMusicInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealingMusicInteractor.swift; sourceTree = "<group>"; };
+		7881AE79759F20139433745A /* TourEventsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TourEventsPresenter.swift; sourceTree = "<group>"; };
+		7ED7489385102DD576EF6297 /* DonatePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DonatePresenter.swift; sourceTree = "<group>"; };
+		87015C5BDD345C0FEC87F5BD /* MoreRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MoreRouter.swift; sourceTree = "<group>"; };
+		88E6B2480C4DECA7C7ED7DD5 /* MorePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MorePresenter.swift; sourceTree = "<group>"; };
+		8C5A90EE0DFC67877F372E7B /* AshramPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AshramPresenter.swift; sourceTree = "<group>"; };
+		8CEC539E9F2E3FF8609F1F32 /* MainMenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		A53C758DF01494BA1C0C817E /* MoreBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MoreBuilder.swift; sourceTree = "<group>"; };
+		A94CE5F34153EE17CFBD2F96 /* HealingMusicBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealingMusicBuilder.swift; sourceTree = "<group>"; };
+		A99CBDB2EAD3F36B7FE37BAF /* AshramInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AshramInteractor.swift; sourceTree = "<group>"; };
+		B95659584308E26CB167EF12 /* TourEventsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TourEventsInteractor.swift; sourceTree = "<group>"; };
+		C8DD62D0A0A3AE76DC6AFE13 /* DonateInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DonateInteractor.swift; sourceTree = "<group>"; };
+		CB89EC85B5DE20A69113083D /* HomePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		CC146B5C4CC0BFB575852135 /* DonateRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DonateRouter.swift; sourceTree = "<group>"; };
+		D12FDE4C21E23E47006646DF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D12FDE4F21E260B8006646DF /* MeditationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationDetailsViewController.swift; sourceTree = "<group>"; };
+		D12FDE5321E27B52006646DF /* FLMediaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLMediaTableViewCell.xib; sourceTree = "<group>"; };
+		D12FDE5921E2950D006646DF /* FLMediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLMediaTableViewCell.swift; sourceTree = "<group>"; };
+		D137316321D16B8B0052C259 /* Istvan Sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Istvan Sky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D137316621D16B8B0052C259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D137317021D16B8D0052C259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D137317221D16B8D0052C259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D137318021D4E7D70052C259 /* FLBasicItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLBasicItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		D137318121D4E7D70052C259 /* FLBasicItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLBasicItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		D137319621D510360052C259 /* FLCollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLCollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		D137319721D510360052C259 /* FLCollectionViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLCollectionViewTableViewCell.xib; sourceTree = "<group>"; };
+		D137319A21D52A380052C259 /* FLTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTableViewCell.swift; sourceTree = "<group>"; };
+		D137319B21D52A380052C259 /* FLTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLTableViewCell.xib; sourceTree = "<group>"; };
+		D13731A621D5635A0052C259 /* AshramBlogItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AshramBlogItemTableViewCell.swift; sourceTree = "<group>"; };
+		D13731A721D5635A0052C259 /* AshramBlogItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AshramBlogItemTableViewCell.xib; sourceTree = "<group>"; };
+		D13731AA21D565710052C259 /* AshramBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AshramBlogViewController.swift; sourceTree = "<group>"; };
+		D13731AB21D565710052C259 /* AshramBlogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AshramBlogViewController.xib; sourceTree = "<group>"; };
+		D13731AE21D56E280052C259 /* TourEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourEventTableViewCell.swift; sourceTree = "<group>"; };
+		D13731AF21D56E280052C259 /* TourEventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourEventTableViewCell.xib; sourceTree = "<group>"; };
+		D148FBEF21DAC55800396068 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D148FBF121DC113900396068 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		D148FBF521DCBDD200396068 /* BasicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicItem.swift; sourceTree = "<group>"; };
+		D148FBF721DCC07300396068 /* LocalizedValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedValue.swift; sourceTree = "<group>"; };
+		D148FC0321DCFD6600396068 /* BasicItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicItemType.swift; sourceTree = "<group>"; };
+		D148FC0621DD09B900396068 /* NSLocaleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLocaleUtils.swift; sourceTree = "<group>"; };
+		D148FC0821DD140C00396068 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		D148FC0A21DD15EE00396068 /* DateFormatterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterUtils.swift; sourceTree = "<group>"; };
+		D148FC0D21DD39D700396068 /* ContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentService.swift; sourceTree = "<group>"; };
+		D148FC1421DD462C00396068 /* Istvan SkyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Istvan SkyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D148FC1621DD462D00396068 /* Istvan_SkyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Istvan_SkyTests.swift; sourceTree = "<group>"; };
+		D148FC1821DD462D00396068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D148FC1F21DD4C1900396068 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		D148FC2121DD663E00396068 /* ServicesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesContainer.swift; sourceTree = "<group>"; };
+		D148FC2421DE83D400396068 /* FLCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		D148FC2821DE945F00396068 /* FLTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTableViewDataSource.swift; sourceTree = "<group>"; };
+		D148FC2A21DE9ED900396068 /* UIImageViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewUtils.swift; sourceTree = "<group>"; };
+		D148FC2C21DEB1E900396068 /* BasicItemUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicItemUtils.swift; sourceTree = "<group>"; };
+		D148FC3021DF96A500396068 /* FLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLViewModel.swift; sourceTree = "<group>"; };
+		D148FC3221DF98F100396068 /* FRProxyDataPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRProxyDataPresenter.swift; sourceTree = "<group>"; };
+		D148FC3421DFA09300396068 /* FLTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTableViewDelegate.swift; sourceTree = "<group>"; };
+		D148FC3621DFA52E00396068 /* FLCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		D148FC5621DFE0BF00396068 /* UIColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorUtils.swift; sourceTree = "<group>"; };
+		D148FC5821DFEE0900396068 /* TourEventsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourEventsDataSource.swift; sourceTree = "<group>"; };
+		D148FC5A21DFEEFB00396068 /* TourEventsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourEventsDelegate.swift; sourceTree = "<group>"; };
+		D148FC5E21E09E1E00396068 /* TimeZoneUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneUtils.swift; sourceTree = "<group>"; };
+		D16FE5FD21E3F18100282E9A /* MoreTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewDataSource.swift; sourceTree = "<group>"; };
+		D16FE5FF21E3F19200282E9A /* MoreTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewDelegate.swift; sourceTree = "<group>"; };
+		D16FE60421E4043600282E9A /* HTMLFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLFileViewController.swift; sourceTree = "<group>"; };
+		D16FE60621E4058000282E9A /* BundleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleUtils.swift; sourceTree = "<group>"; };
+		D16FE60821E407F400282E9A /* appdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = appdata; sourceTree = "<group>"; };
+		D1705BC621E0E144000A2DEA /* AshramBlogViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AshramBlogViewDataSource.swift; sourceTree = "<group>"; };
+		D1705BC821E0E15E000A2DEA /* AshramBlogViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AshramBlogViewDelegate.swift; sourceTree = "<group>"; };
+		D1705BCA21E12A6C000A2DEA /* AshramBlogHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AshramBlogHeaderView.swift; sourceTree = "<group>"; };
+		D1705BCE21E14CEE000A2DEA /* AshramBlogItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AshramBlogItemDetailsViewController.swift; sourceTree = "<group>"; };
+		D1705BD021E161C3000A2DEA /* FeedItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemDetailsViewController.swift; sourceTree = "<group>"; };
+		D195595F21D5790F002D7FA4 /* TourEventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourEventsViewController.xib; sourceTree = "<group>"; };
+		D195596221D650C6002D7FA4 /* Istvan Sky.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Istvan Sky.entitlements"; sourceTree = "<group>"; };
+		D195596A21D67E8C002D7FA4 /* AboutIstvanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutIstvanViewController.swift; sourceTree = "<group>"; };
+		D195596F21D6937A002D7FA4 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		D195599521D6AC08002D7FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1A1F8CE21E1E6B0004B8C87 /* UIButtonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonUtils.swift; sourceTree = "<group>"; };
+		D1A1F8D021E21F06004B8C87 /* ExtendedSFSafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedSFSafariViewController.swift; sourceTree = "<group>"; };
+		D1A1F8D421E23AD6004B8C87 /* InteractivePopRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractivePopRecognizer.swift; sourceTree = "<group>"; };
+		D1A1F8D621E23BCC004B8C87 /* ExtendedUINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedUINavigationController.swift; sourceTree = "<group>"; };
+		D1EF0F4621E49CD1009D6EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1EF0F4821E4ECC1009D6EC6 /* FileManagerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerUtils.swift; sourceTree = "<group>"; };
+		D1F6CDB421E3B9910026AFB6 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
+		D1F6CDB521E3B9910026AFB6 /* DonateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateViewController.xib; sourceTree = "<group>"; };
+		DCD5159AF5AB59114433157E /* libPods-Istvan Sky.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Istvan Sky.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D0513D8333A9D9ED8C1F25 /* HomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ED4E1F69D47460D1F6EFB0E1 /* Pods-Istvan Sky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Istvan Sky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Istvan Sky/Pods-Istvan Sky.debug.xcconfig"; sourceTree = "<group>"; };
+		F154704F4FF98D08DC944549 /* MoreViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
+		FAF96F40F2564A5A26B33C6D /* MoreInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MoreInteractor.swift; sourceTree = "<group>"; };
+		FFA6E006A90CBCFD77E725E9 /* MainMenuBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainMenuBuilder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D137316021D16B8B0052C259 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29EE10DDE2019D5814230858 /* libPods-Istvan Sky.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D148FC1121DD462C00396068 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		013EC40E9E4F8A473B266478 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0B7F6FB8A265A315D30622CE /* AshramRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		02770A1CD94116D78FB47537 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FE919A52799F491657140E75 /* View */,
+				2F301975BB6BD21B71243CF6 /* Presenter */,
+				D609356E86DA3F4C2EE0BD35 /* Interactor */,
+				A5DC25141B52FB430919D68A /* Router */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		117D6147F58FCBDE7D8E95A8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4D4B0C1AD9DC9781F35E12FC /* TourEventsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1316396AA3CBBB2BD5B05A1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D12FDE4F21E260B8006646DF /* MeditationDetailsViewController.swift */,
+				378F3889B1EDF2AA0E0CB3EC /* HealingMusicViewController.swift */,
+				051EF7479EA08DFAD5777C9A /* HealingMusicViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AE0D5B004670BE03E2C6C83 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				67647690A86FECABF6E3304C /* HealingMusicInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		265ED3538440C10D0C55B0AC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FAF96F40F2564A5A26B33C6D /* MoreInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2F301975BB6BD21B71243CF6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CB89EC85B5DE20A69113083D /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3776F3EB43A16919324E8FC3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5741B0D2BF2CFC5A3B7E5D5A /* HealingMusicRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		397435BE802B3A55E4DB5BE9 /* HealingMusic */ = {
+			isa = PBXGroup;
+			children = (
+				5F9ACD744795151EF0999EAF /* Core */,
+				A94CE5F34153EE17CFBD2F96 /* HealingMusicBuilder.swift */,
+			);
+			path = HealingMusic;
+			sourceTree = "<group>";
+		};
+		42C80D0B53A96DD0A065F527 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8CEC539E9F2E3FF8609F1F32 /* MainMenuViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42E55E51F16FED2BBCEA71C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AFC3B6C35665C06F2C14043 /* MoreViewController.swift */,
+				F154704F4FF98D08DC944549 /* MoreViewController.xib */,
+				D16FE5FD21E3F18100282E9A /* MoreTableViewDataSource.swift */,
+				D16FE5FF21E3F19200282E9A /* MoreTableViewDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CFDCCA5CAA035F03D2E87A9 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				6B276DA09C94F36182933604 /* Core */,
+				A53C758DF01494BA1C0C817E /* MoreBuilder.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		575E7B5465F431EE60095E24 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A99CBDB2EAD3F36B7FE37BAF /* AshramInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5F9ACD744795151EF0999EAF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1316396AA3CBBB2BD5B05A1C /* View */,
+				711BCDF3C165F652D41E95BF /* Presenter */,
+				1AE0D5B004670BE03E2C6C83 /* Interactor */,
+				3776F3EB43A16919324E8FC3 /* Router */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5FA868EFC5DAB405D27A7D9D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C4E1114F7EEEAC7913B8ECC7 /* View */,
+				AAB35E3D21C7A5243B496006 /* Presenter */,
+				575E7B5465F431EE60095E24 /* Interactor */,
+				013EC40E9E4F8A473B266478 /* Router */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		64B01F7513079251C6C28ED8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				02770A1CD94116D78FB47537 /* Core */,
+				21E3D17554D091DA2705C869 /* HomeBuilder.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		67A5C1C842BA977279A9746F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D13731AE21D56E280052C259 /* TourEventTableViewCell.swift */,
+				D13731AF21D56E280052C259 /* TourEventTableViewCell.xib */,
+				D195595F21D5790F002D7FA4 /* TourEventsViewController.xib */,
+				26185AD41113E4BB8EEDFC47 /* TourEventsViewController.swift */,
+				D148FC5821DFEE0900396068 /* TourEventsDataSource.swift */,
+				D148FC5A21DFEEFB00396068 /* TourEventsDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69B9F5ACB0B2131E335BC530 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FB4E04D4FE3A6C6F4AE443D1 /* Core */,
+				FFA6E006A90CBCFD77E725E9 /* MainMenuBuilder.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		6B276DA09C94F36182933604 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				42E55E51F16FED2BBCEA71C1 /* View */,
+				F523A9648178DC7D50CA5E28 /* Presenter */,
+				265ED3538440C10D0C55B0AC /* Interactor */,
+				F53681ECA9266F75627A2E32 /* Router */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6FA0EE0836B1E99F34C4F47A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE5024125C24ECB271D3F8 /* MainMenuInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		711BCDF3C165F652D41E95BF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				09009EBE277FA174AB8FDA7F /* HealingMusicPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7F32C9F2213C94C99147FC2D /* TourEvents */ = {
+			isa = PBXGroup;
+			children = (
+				FE85ACF03151CDB3648F8291 /* Core */,
+				2811519667A7ABC6D6EC2ABE /* TourEventsBuilder.swift */,
+			);
+			path = TourEvents;
+			sourceTree = "<group>";
+		};
+		83FC63641D13135701BA2510 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7881AE79759F20139433745A /* TourEventsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		841571939C467B2949B787FF /* Ashram */ = {
+			isa = PBXGroup;
+			children = (
+				5FA868EFC5DAB405D27A7D9D /* Core */,
+				3876EAD2A3D22F688A89DDA6 /* AshramBuilder.swift */,
+			);
+			path = Ashram;
+			sourceTree = "<group>";
+		};
+		8DB29B02B0D64115828A4A72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD5159AF5AB59114433157E /* libPods-Istvan Sky.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		998F844DE672035341A27DE9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4BB4AEAF893DF638AE620C70 /* MainMenuRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9993620429A1516D06848A09 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CC146B5C4CC0BFB575852135 /* DonateRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A1CE4D3C5D05245C2181A3A3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B95659584308E26CB167EF12 /* TourEventsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A5DC25141B52FB430919D68A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				38732221DE610F6400BFFE56 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AAB35E3D21C7A5243B496006 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8C5A90EE0DFC67877F372E7B /* AshramPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ADA774C9DE17754B248356AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED4E1F69D47460D1F6EFB0E1 /* Pods-Istvan Sky.debug.xcconfig */,
+				0E830AB91B4EF82FA5F71BF6 /* Pods-Istvan Sky.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4E1114F7EEEAC7913B8ECC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D13731A621D5635A0052C259 /* AshramBlogItemTableViewCell.swift */,
+				D13731A721D5635A0052C259 /* AshramBlogItemTableViewCell.xib */,
+				D13731AA21D565710052C259 /* AshramBlogViewController.swift */,
+				D1705BCA21E12A6C000A2DEA /* AshramBlogHeaderView.swift */,
+				D13731AB21D565710052C259 /* AshramBlogViewController.xib */,
+				D1705BC621E0E144000A2DEA /* AshramBlogViewDataSource.swift */,
+				D1705BC821E0E15E000A2DEA /* AshramBlogViewDelegate.swift */,
+				D1705BCE21E14CEE000A2DEA /* AshramBlogItemDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8A6D0BB8B20A034FFA3AF6C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED2452F82BF11015B4F6BE /* View */,
+				CFAC8382E7986814548E0964 /* Presenter */,
+				D4E5B4D6D7F4C2C9DF3BF4BA /* Interactor */,
+				9993620429A1516D06848A09 /* Router */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CFAC8382E7986814548E0964 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7ED7489385102DD576EF6297 /* DonatePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D12FDE4E21E241C7006646DF /* GestureRecognizers */ = {
+			isa = PBXGroup;
+			children = (
+				D1A1F8D421E23AD6004B8C87 /* InteractivePopRecognizer.swift */,
+			);
+			path = GestureRecognizers;
+			sourceTree = "<group>";
+		};
+		D137315A21D16B8B0052C259 = {
+			isa = PBXGroup;
+			children = (
+				D137316521D16B8B0052C259 /* Istvan Sky */,
+				D148FC1521DD462D00396068 /* Istvan SkyTests */,
+				D137316421D16B8B0052C259 /* Products */,
+				ADA774C9DE17754B248356AC /* Pods */,
+				8DB29B02B0D64115828A4A72 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D137316421D16B8B0052C259 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D137316321D16B8B0052C259 /* Istvan Sky.app */,
+				D148FC1421DD462C00396068 /* Istvan SkyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D137316521D16B8B0052C259 /* Istvan Sky */ = {
+			isa = PBXGroup;
+			children = (
+				D16FE60321E4026A00282E9A /* Resources */,
+				D195596321D6634F002D7FA4 /* Sources */,
+				D137317221D16B8D0052C259 /* Info.plist */,
+				D195596221D650C6002D7FA4 /* Istvan Sky.entitlements */,
+			);
+			path = "Istvan Sky";
+			sourceTree = "<group>";
+		};
+		D148FBF321DCBDB100396068 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D148FC0C21DD39C200396068 /* ContentService */,
+				D148FBF421DCBDBA00396068 /* Models */,
+				D148FC2121DD663E00396068 /* ServicesContainer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D148FBF421DCBDBA00396068 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D148FBF521DCBDD200396068 /* BasicItem.swift */,
+				D148FC0321DCFD6600396068 /* BasicItemType.swift */,
+				D148FBF721DCC07300396068 /* LocalizedValue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D148FC0521DD098D00396068 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D148FC0621DD09B900396068 /* NSLocaleUtils.swift */,
+				D148FC5E21E09E1E00396068 /* TimeZoneUtils.swift */,
+				D148FC0821DD140C00396068 /* DateUtils.swift */,
+				D148FC0A21DD15EE00396068 /* DateFormatterUtils.swift */,
+				D148FC2A21DE9ED900396068 /* UIImageViewUtils.swift */,
+				D148FC2C21DEB1E900396068 /* BasicItemUtils.swift */,
+				D148FC5621DFE0BF00396068 /* UIColorUtils.swift */,
+				D1A1F8CE21E1E6B0004B8C87 /* UIButtonUtils.swift */,
+				D16FE60621E4058000282E9A /* BundleUtils.swift */,
+				D1EF0F4821E4ECC1009D6EC6 /* FileManagerUtils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D148FC0C21DD39C200396068 /* ContentService */ = {
+			isa = PBXGroup;
+			children = (
+				D148FC0D21DD39D700396068 /* ContentService.swift */,
+			);
+			path = ContentService;
+			sourceTree = "<group>";
+		};
+		D148FC0F21DD460F00396068 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				69B9F5ACB0B2131E335BC530 /* MainMenu */,
+				64B01F7513079251C6C28ED8 /* Home */,
+				7F32C9F2213C94C99147FC2D /* TourEvents */,
+				841571939C467B2949B787FF /* Ashram */,
+				397435BE802B3A55E4DB5BE9 /* HealingMusic */,
+				DA66B5616519D265C8A4DE88 /* Donate */,
+				4CFDCCA5CAA035F03D2E87A9 /* More */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D148FC1521DD462D00396068 /* Istvan SkyTests */ = {
+			isa = PBXGroup;
+			children = (
+				D148FC1E21DD463900396068 /* Modules */,
+				D148FC1621DD462D00396068 /* Istvan_SkyTests.swift */,
+				D148FC1821DD462D00396068 /* Info.plist */,
+			);
+			path = "Istvan SkyTests";
+			sourceTree = "<group>";
+		};
+		D148FC1E21DD463900396068 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D148FC2621DE8FB000396068 /* FlexibleListParts */ = {
+			isa = PBXGroup;
+			children = (
+				D12FDE5921E2950D006646DF /* FLMediaTableViewCell.swift */,
+				D12FDE5321E27B52006646DF /* FLMediaTableViewCell.xib */,
+				D137318021D4E7D70052C259 /* FLBasicItemCollectionViewCell.swift */,
+				D137318121D4E7D70052C259 /* FLBasicItemCollectionViewCell.xib */,
+				D148FC2421DE83D400396068 /* FLCollectionViewDataSource.swift */,
+				D148FC3621DFA52E00396068 /* FLCollectionViewDelegate.swift */,
+				D137319621D510360052C259 /* FLCollectionViewTableViewCell.swift */,
+				D137319721D510360052C259 /* FLCollectionViewTableViewCell.xib */,
+				D148FC2821DE945F00396068 /* FLTableViewDataSource.swift */,
+				D148FC3421DFA09300396068 /* FLTableViewDelegate.swift */,
+				D137319A21D52A380052C259 /* FLTableViewCell.swift */,
+				D137319B21D52A380052C259 /* FLTableViewCell.xib */,
+				D148FC3021DF96A500396068 /* FLViewModel.swift */,
+				D148FC3221DF98F100396068 /* FRProxyDataPresenter.swift */,
+			);
+			path = FlexibleListParts;
+			sourceTree = "<group>";
+		};
+		D148FC2721DE8FD200396068 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D12FDE4C21E23E47006646DF /* BaseViewController.swift */,
+				D148FC1F21DD4C1900396068 /* EntryViewController.swift */,
+				D148FBF121DC113900396068 /* ItemDetailsViewController.swift */,
+				D1A1F8D021E21F06004B8C87 /* ExtendedSFSafariViewController.swift */,
+				D1A1F8D621E23BCC004B8C87 /* ExtendedUINavigationController.swift */,
+				D16FE60421E4043600282E9A /* HTMLFileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D16FE60321E4026A00282E9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D16FE60821E407F400282E9A /* appdata */,
+				D1EF0F4621E49CD1009D6EC6 /* Assets.xcassets */,
+				D137316F21D16B8D0052C259 /* LaunchScreen.storyboard */,
+				D195599421D6AC08002D7FA4 /* Main.storyboard */,
+				D148FBEF21DAC55800396068 /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D195596321D6634F002D7FA4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D137316621D16B8B0052C259 /* AppDelegate.swift */,
+				D148FC0F21DD460F00396068 /* Modules */,
+				D148FBF321DCBDB100396068 /* Services */,
+				D195596421D66364002D7FA4 /* Common */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D195596421D66364002D7FA4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D148FC0521DD098D00396068 /* Extensions */,
+				D195596521D6636D002D7FA4 /* Components */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D195596521D6636D002D7FA4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D12FDE4E21E241C7006646DF /* GestureRecognizers */,
+				D148FC2721DE8FD200396068 /* ViewControllers */,
+				D148FC2621DE8FB000396068 /* FlexibleListParts */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D4E5B4D6D7F4C2C9DF3BF4BA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C8DD62D0A0A3AE76DC6AFE13 /* DonateInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D609356E86DA3F4C2EE0BD35 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2F7AB1A7163F85FDD77C5759 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DA66B5616519D265C8A4DE88 /* Donate */ = {
+			isa = PBXGroup;
+			children = (
+				C8A6D0BB8B20A034FFA3AF6C /* Core */,
+				12EE602F4871E5F25C7ED1DE /* DonateBuilder.swift */,
+			);
+			path = Donate;
+			sourceTree = "<group>";
+		};
+		DF7686DE6804B2D2B4AD2282 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1FEBAA4ADB40830F70B4C058 /* MainMenuPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F0ED2452F82BF11015B4F6BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1F6CDB421E3B9910026AFB6 /* DonateViewController.swift */,
+				D1F6CDB521E3B9910026AFB6 /* DonateViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F523A9648178DC7D50CA5E28 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				88E6B2480C4DECA7C7ED7DD5 /* MorePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F53681ECA9266F75627A2E32 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				87015C5BDD345C0FEC87F5BD /* MoreRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FB4E04D4FE3A6C6F4AE443D1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				42C80D0B53A96DD0A065F527 /* View */,
+				DF7686DE6804B2D2B4AD2282 /* Presenter */,
+				6FA0EE0836B1E99F34C4F47A /* Interactor */,
+				998F844DE672035341A27DE9 /* Router */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FE85ACF03151CDB3648F8291 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				67A5C1C842BA977279A9746F /* View */,
+				83FC63641D13135701BA2510 /* Presenter */,
+				A1CE4D3C5D05245C2181A3A3 /* Interactor */,
+				117D6147F58FCBDE7D8E95A8 /* Router */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FE919A52799F491657140E75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D195596A21D67E8C002D7FA4 /* AboutIstvanViewController.swift */,
+				D1705BD021E161C3000A2DEA /* FeedItemDetailsViewController.swift */,
+				E9D0513D8333A9D9ED8C1F25 /* HomeViewController.swift */,
+				D195596F21D6937A002D7FA4 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D137316221D16B8B0052C259 /* Istvan Sky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D137317521D16B8D0052C259 /* Build configuration list for PBXNativeTarget "Istvan Sky" */;
+			buildPhases = (
+				DF93B2EF10052D1516EC5BA7 /* [CP] Check Pods Manifest.lock */,
+				D137315F21D16B8B0052C259 /* Sources */,
+				D137316021D16B8B0052C259 /* Frameworks */,
+				D137316121D16B8B0052C259 /* Resources */,
+				5121BAD56021A7F2C89642F5 /* [CP] Copy Pods Resources */,
+				D1EF0F4A21E522A8009D6EC6 /* Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Istvan Sky";
+			productName = experiments;
+			productReference = D137316321D16B8B0052C259 /* Istvan Sky.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D148FC1321DD462C00396068 /* Istvan SkyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D148FC1B21DD462D00396068 /* Build configuration list for PBXNativeTarget "Istvan SkyTests" */;
+			buildPhases = (
+				D148FC1021DD462C00396068 /* Sources */,
+				D148FC1121DD462C00396068 /* Frameworks */,
+				D148FC1221DD462C00396068 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D148FC1A21DD462D00396068 /* PBXTargetDependency */,
+			);
+			name = "Istvan SkyTests";
+			productName = "Istvan SkyTests";
+			productReference = D148FC1421DD462C00396068 /* Istvan SkyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D137315B21D16B8B0052C259 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = GMBN;
+				TargetAttributes = {
+					D137316221D16B8B0052C259 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					D148FC1321DD462C00396068 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D137316221D16B8B0052C259;
+					};
+				};
+			};
+			buildConfigurationList = D137315E21D16B8B0052C259 /* Build configuration list for PBXProject "Istvan Sky" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D137315A21D16B8B0052C259;
+			productRefGroup = D137316421D16B8B0052C259 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D137316221D16B8B0052C259 /* Istvan Sky */,
+				D148FC1321DD462C00396068 /* Istvan SkyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D137316121D16B8B0052C259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D16FE60921E407F400282E9A /* appdata in Resources */,
+				D148FBF021DAC55800396068 /* GoogleService-Info.plist in Resources */,
+				D137319921D510360052C259 /* FLCollectionViewTableViewCell.xib in Resources */,
+				D137319D21D52A380052C259 /* FLTableViewCell.xib in Resources */,
+				D195599621D6AC08002D7FA4 /* Main.storyboard in Resources */,
+				D13731A921D5635A0052C259 /* AshramBlogItemTableViewCell.xib in Resources */,
+				D137317121D16B8D0052C259 /* LaunchScreen.storyboard in Resources */,
+				D13731AD21D565710052C259 /* AshramBlogViewController.xib in Resources */,
+				D195596121D5790F002D7FA4 /* TourEventsViewController.xib in Resources */,
+				D137318321D4E7D80052C259 /* FLBasicItemCollectionViewCell.xib in Resources */,
+				D13731B121D56E280052C259 /* TourEventTableViewCell.xib in Resources */,
+				D1F6CDB721E3B9910026AFB6 /* DonateViewController.xib in Resources */,
+				D195597121D6937A002D7FA4 /* HomeViewController.xib in Resources */,
+				B0B042852B7DDA8E1372682C /* HealingMusicViewController.xib in Resources */,
+				D12FDE5421E27B52006646DF /* FLMediaTableViewCell.xib in Resources */,
+				4876302BC40770B8E100E75C /* MoreViewController.xib in Resources */,
+				D1EF0F4721E49CD1009D6EC6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D148FC1221DD462C00396068 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5121BAD56021A7F2C89642F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Istvan Sky/Pods-Istvan Sky-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessagingDisplay/InAppMessagingDisplayResources.bundle",
+				"${PODS_ROOT}/YoutubeKit/YoutubeKit/player.html",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/InAppMessagingDisplayResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/player.html",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Istvan Sky/Pods-Istvan Sky-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1EF0F4A21E522A8009D6EC6 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		DF93B2EF10052D1516EC5BA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Istvan Sky-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D137315F21D16B8B0052C259 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D148FC3521DFA09300396068 /* FLTableViewDelegate.swift in Sources */,
+				D148FC5721DFE0BF00396068 /* UIColorUtils.swift in Sources */,
+				D1A1F8D521E23AD6004B8C87 /* InteractivePopRecognizer.swift in Sources */,
+				D148FC2521DE83D400396068 /* FLCollectionViewDataSource.swift in Sources */,
+				D148FC5921DFEE0900396068 /* TourEventsDataSource.swift in Sources */,
+				D12FDE4D21E23E47006646DF /* BaseViewController.swift in Sources */,
+				D16FE60521E4043600282E9A /* HTMLFileViewController.swift in Sources */,
+				D148FC0721DD09B900396068 /* NSLocaleUtils.swift in Sources */,
+				D148FC0E21DD39D700396068 /* ContentService.swift in Sources */,
+				D1F6CDB621E3B9910026AFB6 /* DonateViewController.swift in Sources */,
+				D13731AC21D565710052C259 /* AshramBlogViewController.swift in Sources */,
+				D1A1F8D121E21F06004B8C87 /* ExtendedSFSafariViewController.swift in Sources */,
+				D12FDE5021E260B8006646DF /* MeditationDetailsViewController.swift in Sources */,
+				D13731A821D5635A0052C259 /* AshramBlogItemTableViewCell.swift in Sources */,
+				D148FBF221DC113900396068 /* ItemDetailsViewController.swift in Sources */,
+				D1A1F8CF21E1E6B0004B8C87 /* UIButtonUtils.swift in Sources */,
+				D148FC2B21DE9ED900396068 /* UIImageViewUtils.swift in Sources */,
+				D148FC2021DD4C1900396068 /* EntryViewController.swift in Sources */,
+				D148FC2221DD663E00396068 /* ServicesContainer.swift in Sources */,
+				D16FE5FE21E3F18100282E9A /* MoreTableViewDataSource.swift in Sources */,
+				D148FC0921DD140C00396068 /* DateUtils.swift in Sources */,
+				D148FBF621DCBDD200396068 /* BasicItem.swift in Sources */,
+				D148FC0421DCFD6600396068 /* BasicItemType.swift in Sources */,
+				D137319C21D52A380052C259 /* FLTableViewCell.swift in Sources */,
+				D148FBF821DCC07300396068 /* LocalizedValue.swift in Sources */,
+				D137318221D4E7D70052C259 /* FLBasicItemCollectionViewCell.swift in Sources */,
+				D12FDE5A21E2950D006646DF /* FLMediaTableViewCell.swift in Sources */,
+				D148FC0B21DD15EE00396068 /* DateFormatterUtils.swift in Sources */,
+				D137319821D510360052C259 /* FLCollectionViewTableViewCell.swift in Sources */,
+				D1705BCB21E12A6C000A2DEA /* AshramBlogHeaderView.swift in Sources */,
+				D195596C21D67E8C002D7FA4 /* AboutIstvanViewController.swift in Sources */,
+				D137316721D16B8B0052C259 /* AppDelegate.swift in Sources */,
+				D1EF0F4921E4ECC1009D6EC6 /* FileManagerUtils.swift in Sources */,
+				D13731B021D56E280052C259 /* TourEventTableViewCell.swift in Sources */,
+				D148FC5B21DFEEFB00396068 /* TourEventsDelegate.swift in Sources */,
+				897ABF9CE00D8C9E0D4E67E4 /* MainMenuViewController.swift in Sources */,
+				52838879152D4A7B5D7A5D55 /* MainMenuPresenter.swift in Sources */,
+				53B6CC5C40AA330D5E16DC20 /* MainMenuInteractor.swift in Sources */,
+				FCD976EBFDE66FCA399DAE56 /* MainMenuRouter.swift in Sources */,
+				B5F5A89E62ECF92B4BB4039A /* MainMenuBuilder.swift in Sources */,
+				D16FE60721E4058000282E9A /* BundleUtils.swift in Sources */,
+				75A777CCA4C0C9E673EE56BF /* HomeViewController.swift in Sources */,
+				BF75EE7F16BA25073BA6713A /* HomePresenter.swift in Sources */,
+				FFFD5DAF142A4C9CB76262AF /* HomeInteractor.swift in Sources */,
+				F7371F5FB943C5410A1B7C45 /* HomeRouter.swift in Sources */,
+				303E0886E8B239BCD204A23D /* HomeBuilder.swift in Sources */,
+				19B916D2F6702CFA4119D20D /* TourEventsViewController.swift in Sources */,
+				07864E036235038C59F9A515 /* TourEventsPresenter.swift in Sources */,
+				4312C234C83849BA7E62D107 /* TourEventsInteractor.swift in Sources */,
+				30D70F40C45A8AE9AEB9697B /* TourEventsRouter.swift in Sources */,
+				D148FC2D21DEB1E900396068 /* BasicItemUtils.swift in Sources */,
+				D148FC3721DFA52E00396068 /* FLCollectionViewDelegate.swift in Sources */,
+				D148FC5F21E09E1E00396068 /* TimeZoneUtils.swift in Sources */,
+				D1705BC921E0E15E000A2DEA /* AshramBlogViewDelegate.swift in Sources */,
+				D148FC3121DF96A500396068 /* FLViewModel.swift in Sources */,
+				D148FC2921DE945F00396068 /* FLTableViewDataSource.swift in Sources */,
+				D1A1F8D721E23BCC004B8C87 /* ExtendedUINavigationController.swift in Sources */,
+				E3B7D6509608F8EFC3614F17 /* TourEventsBuilder.swift in Sources */,
+				D148FC3321DF98F100396068 /* FRProxyDataPresenter.swift in Sources */,
+				9D09C5843B9B2732A5D5A7CA /* AshramPresenter.swift in Sources */,
+				D1705BD121E161C3000A2DEA /* FeedItemDetailsViewController.swift in Sources */,
+				D1705BCF21E14CEE000A2DEA /* AshramBlogItemDetailsViewController.swift in Sources */,
+				D16FE60021E3F19200282E9A /* MoreTableViewDelegate.swift in Sources */,
+				D1705BC721E0E144000A2DEA /* AshramBlogViewDataSource.swift in Sources */,
+				F91C5F37F1FA9F3F511A0865 /* AshramInteractor.swift in Sources */,
+				0EB099CA3DC0FBBA618C1A47 /* AshramRouter.swift in Sources */,
+				868DF0CBD846307F5A018BB6 /* AshramBuilder.swift in Sources */,
+				3D6A850AC0059A838924EDD3 /* HealingMusicViewController.swift in Sources */,
+				492F6919C557BF126E9FA217 /* HealingMusicPresenter.swift in Sources */,
+				17E187DB4AF3E3253CA416BC /* HealingMusicInteractor.swift in Sources */,
+				FEDC168F739433ACE90D3BF6 /* HealingMusicRouter.swift in Sources */,
+				FE90D1CCAF37D520BDFA528A /* HealingMusicBuilder.swift in Sources */,
+				9F926DA245E75E0DB2DC6E55 /* DonatePresenter.swift in Sources */,
+				7EA4E488F2C798AF2481B53E /* DonateInteractor.swift in Sources */,
+				D88DDED0CD9A0A83797D59C4 /* DonateRouter.swift in Sources */,
+				A5B04D2A3AD1080D58CE89DA /* DonateBuilder.swift in Sources */,
+				943D37497121641F366D55DF /* MoreViewController.swift in Sources */,
+				126DF130ED42C3CB6396444D /* MorePresenter.swift in Sources */,
+				7D597A2B28717A8518899D25 /* MoreInteractor.swift in Sources */,
+				A7D65EC3617F8A05BAF920FD /* MoreRouter.swift in Sources */,
+				0897399965B7578AD519241C /* MoreBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D148FC1021DD462C00396068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D148FC1721DD462D00396068 /* Istvan_SkyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D148FC1A21DD462D00396068 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D137316221D16B8B0052C259 /* Istvan Sky */;
+			targetProxy = D148FC1921DD462D00396068 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D137316F21D16B8D0052C259 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D137317021D16B8D0052C259 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D195599421D6AC08002D7FA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D195599521D6AC08002D7FA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D137317321D16B8D0052C259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D137317421D16B8D0052C259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D137317621D16B8D0052C259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED4E1F69D47460D1F6EFB0E1 /* Pods-Istvan Sky.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Istvan Sky/Istvan Sky.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86U5Z8HYB;
+				INFOPLIST_FILE = "Istvan Sky/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.istvansky.app.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D137317721D16B8D0052C259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E830AB91B4EF82FA5F71BF6 /* Pods-Istvan Sky.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Istvan Sky/Istvan Sky.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86U5Z8HYB;
+				INFOPLIST_FILE = "Istvan Sky/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.istvansky.app.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D148FC1C21DD462D00396068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(ingerited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86U5Z8HYB;
+				INFOPLIST_FILE = "Istvan SkyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghimbovschi.Istvan-SkyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Istvan Sky.app/Istvan Sky";
+			};
+			name = Debug;
+		};
+		D148FC1D21DD462D00396068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(ingerited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H86U5Z8HYB;
+				INFOPLIST_FILE = "Istvan SkyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghimbovschi.Istvan-SkyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Istvan Sky.app/Istvan Sky";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D137315E21D16B8B0052C259 /* Build configuration list for PBXProject "Istvan Sky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D137317321D16B8D0052C259 /* Debug */,
+				D137317421D16B8D0052C259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D137317521D16B8D0052C259 /* Build configuration list for PBXNativeTarget "Istvan Sky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D137317621D16B8D0052C259 /* Debug */,
+				D137317721D16B8D0052C259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D148FC1B21DD462D00396068 /* Build configuration list for PBXNativeTarget "Istvan SkyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D148FC1C21DD462D00396068 /* Debug */,
+				D148FC1D21DD462D00396068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D137315B21D16B8B0052C259 /* Project object */;
+}
