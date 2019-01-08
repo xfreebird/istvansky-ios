@@ -5,13 +5,17 @@ platform :ios do
     en_ci_utils_init
   end
 
-  # example with match
   lane :build do
   	cocoapods
     en_setup_keychain
     en_setup_project
     match
     gym
+  end
+
+  lane :appstore do
+    build
+    pilot
   end
 
   after_all do |lane|
