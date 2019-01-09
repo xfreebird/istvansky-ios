@@ -53,7 +53,7 @@
           "items": [
             {
               "title": "The Best Music and Singing",
-              "content": "The Song of the Butterfly – Amazing message from the Sky\n\nHe talks about the secrets of the healing sounds like this: “The healing sound is born in a deep meditative state. Just sit in silence in nature. Let the ancient cosmic harmony probe deeply into your heart. Breathe slowly and listen to the songs of trees, plants and birds. Breathe together with spring, be the unfolding flower, breathe together with summer, with the miracle of completeness. Breathe together with autumn, with the passing of time and breathe together with the quiet stillness of winter.”\n\n“The longing soul is like a butterfly flying over the flowers of a huge garden. In its aspiration to be fully satisfied in its brief existence, sometimes gets lost among colors, shapes, loves and pains. And it only realize its endless search when notices that on the essence of all that exists, itself and the flowers are one. The Essence of Everything has no name. The existence of Everything which owns a name is an illusion.”\n\nThank you for this music inspiration……Ezequiel Belchior\n\nhttps://istvansky.bandcamp.com/track/cosmic-ritual-dance-from-the-sky",
+              "content": "The Song of the Butterfly – Amazing message from the Sky\n\nHe talks about the secrets of the healing sounds like this: “The healing sound is born in a deep meditative state. Just sit in silence in nature. Let the ancient cosmic harmony probe deeply into your heart. Breathe slowly and listen to the songs of trees, plants and birds. Breathe together with spring, be the unfolding flower, breathe together with summer, with the miracle of completeness. Breathe together with autumn, with the passing of time and breathe together with the quiet stillness of winter.”\n\n“The longing soul is like a butterfly flying over the flowers of a huge garden. In its aspiration to be fully satisfied in its brief existence, sometimes gets lost among colors, shapes, loves and pains. And it only realize its endless search when notices that on the essence of all that exists, itself and the flowers are one. The Essence of Everything has no name. The existence of Everything which owns a name is an illusion.”\n\nThank you for this music inspiration……Ezequiel Belchior\n\n Find on bandcamp site track cosmic-ritual-dance-from-the-sky",
               "webUrl": "http://istvansky.com/2017/09/17/the-best-music-and-singing/",
               "imageUrl": "https://img.youtube.com/vi/Uat_HUGXnCo/hqdefault.jpg",
               "youtubeVideoId": "Uat_HUGXnCo",
@@ -97,7 +97,7 @@
       "title": "Healing Music",
       "type": "music",
       "imageName": "menu-healing",
-      "webUrl": "https://istvansky.bandcamp.com/",
+      "webUrl": "http://istvansky.com",
       "items": [
         {
           "title": "Healing Meditations",
@@ -145,7 +145,7 @@
           "title": "",
           "imageName": "support",
           "type": "support",
-          "content": "Please Enjoy Istvan Sky's Healing Music on your favourite platform and follow on social networks listed below",
+          "content": "Please Enjoy Istvan Sky's Healing Music on Apple Music and on other similar popular services",
           "hideItemsPreview": true,
           "items": [
             {
@@ -153,42 +153,6 @@
               "imageName": "apple-music",
               "webUrl": "https://itunes.apple.com/us/artist/istvan-sky/965794026",
               "type": "applemusic"
-            },
-            {
-              "title": "Bandcamp",
-              "imageName": "bandcamp",
-              "webUrl": "https://istvansky.bandcamp.com",
-              "type": "bandcamp"
-            },
-            {
-              "title": "Listen on Spotify",
-              "imageName": "spotify",
-              "webUrl": "https://open.spotify.com/artist/3ASrFORWae2H8quuvPPcdm?si=9XUjed5eQoaxvK5jj2bQjg",
-              "type": "spotify"
-            },
-            {
-              "title": "Listen on Deezer",
-              "imageName": "deezer",
-              "webUrl": "https://www.deezer.com/artist/7523014",
-              "type": "deezer"
-            },
-            {
-              "title": "Listen on Google Music",
-              "imageName": "google-music",
-              "webUrl": "https://play.google.com/music/preview/A6cvzu63bsqjibdvjfqa2plvzk4",
-              "type": "googlemusic"
-            },
-            {
-              "title": "Listen on Tidal",
-              "imageName": "tidal",
-              "webUrl": "https://tidal.com/artist/6529537",
-              "type": "tidal"
-            },
-            {
-              "title": "Listen on Amazon Music",
-              "imageName": "amazon",
-              "webUrl": "https://www.amazon.com/s/ref=dm_aw_ps_adp?search-alias=digital-music&k=Istvan+Sky",
-              "type": "amazon"
             },
             {
               "title": "Listen on Youtube",

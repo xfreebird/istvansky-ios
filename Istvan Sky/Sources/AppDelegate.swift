@@ -43,7 +43,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setupAudioPlayback() {
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
             UIApplication.shared.beginReceivingRemoteControlEvents()
         } catch _ as NSError {
         }
