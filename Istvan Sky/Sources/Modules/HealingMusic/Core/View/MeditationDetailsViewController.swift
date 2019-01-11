@@ -12,14 +12,13 @@ import AVKit
 class MeditationDetailsViewController: ItemDetailsViewController {
     weak var presenter: HomePresenter?
     
+    override func isAudioOnly() -> Bool {
+        return true
+    }
+
     override func allScrollViewSubviews() -> [UIView] {
         mediaView = contentStreamingView()
         textView = decriptionTextView()
-
-        if let audioLink = viewModel?.audioUrl,
-            let audioUrl = URL(string: audioLink) {
-            addVideoStreamingView(url: audioUrl)
-        }
 
         title = viewModel?.title
         return [mediaView, textView]

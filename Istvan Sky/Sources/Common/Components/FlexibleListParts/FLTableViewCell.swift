@@ -18,7 +18,8 @@ class FLTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         readMoreLabel.textColor = UIColor.lightGray
-
+        imageHeaderView.makeRoundCorners()
+        
         if UIDevice.current.userInterfaceIdiom == .pad {
             imageHeightConstraint.constant = 280
             descriptionLabel.numberOfLines = 8

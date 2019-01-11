@@ -23,6 +23,7 @@
 		52838879152D4A7B5D7A5D55 /* MainMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBAA4ADB40830F70B4C058 /* MainMenuPresenter.swift */; };
 		53B6CC5C40AA330D5E16DC20 /* MainMenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE5024125C24ECB271D3F8 /* MainMenuInteractor.swift */; };
 		75A777CCA4C0C9E673EE56BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0513D8333A9D9ED8C1F25 /* HomeViewController.swift */; };
+		76FCE13A21E8ED6C00158D93 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FCE13921E8ED6C00158D93 /* UIView.swift */; };
 		7D597A2B28717A8518899D25 /* MoreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF96F40F2564A5A26B33C6D /* MoreInteractor.swift */; };
 		7EA4E488F2C798AF2481B53E /* DonateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD62D0A0A3AE76DC6AFE13 /* DonateInteractor.swift */; };
 		868DF0CBD846307F5A018BB6 /* AshramBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3876EAD2A3D22F688A89DDA6 /* AshramBuilder.swift */; };
@@ -148,6 +149,7 @@
 		4D4B0C1AD9DC9781F35E12FC /* TourEventsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TourEventsRouter.swift; sourceTree = "<group>"; };
 		5741B0D2BF2CFC5A3B7E5D5A /* HealingMusicRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealingMusicRouter.swift; sourceTree = "<group>"; };
 		67647690A86FECABF6E3304C /* HealingMusicInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealingMusicInteractor.swift; sourceTree = "<group>"; };
+		76FCE13921E8ED6C00158D93 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		7881AE79759F20139433745A /* TourEventsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TourEventsPresenter.swift; sourceTree = "<group>"; };
 		7ED7489385102DD576EF6297 /* DonatePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DonatePresenter.swift; sourceTree = "<group>"; };
 		87015C5BDD345C0FEC87F5BD /* MoreRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MoreRouter.swift; sourceTree = "<group>"; };
@@ -663,6 +665,7 @@
 				D1A1F8CE21E1E6B0004B8C87 /* UIButtonUtils.swift */,
 				D16FE60621E4058000282E9A /* BundleUtils.swift */,
 				D1EF0F4821E4ECC1009D6EC6 /* FileManagerUtils.swift */,
+				76FCE13921E8ED6C00158D93 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1035,14 +1038,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Istvan Sky/Pods-Istvan Sky-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessagingDisplay/InAppMessagingDisplayResources.bundle",
-				"${PODS_ROOT}/YoutubeKit/YoutubeKit/player.html",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/InAppMessagingDisplayResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/player.html",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1158,6 +1159,7 @@
 				30D70F40C45A8AE9AEB9697B /* TourEventsRouter.swift in Sources */,
 				D148FC2D21DEB1E900396068 /* BasicItemUtils.swift in Sources */,
 				D148FC3721DFA52E00396068 /* FLCollectionViewDelegate.swift in Sources */,
+				76FCE13A21E8ED6C00158D93 /* UIView.swift in Sources */,
 				D148FC5F21E09E1E00396068 /* TimeZoneUtils.swift in Sources */,
 				D1705BC921E0E15E000A2DEA /* AshramBlogViewDelegate.swift in Sources */,
 				D148FC3121DF96A500396068 /* FLViewModel.swift in Sources */,

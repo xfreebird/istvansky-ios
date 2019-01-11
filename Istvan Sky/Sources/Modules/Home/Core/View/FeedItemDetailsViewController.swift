@@ -23,10 +23,6 @@ class FeedItemDetailsViewController: ItemDetailsViewController {
         
         title = viewModel?.title
         setupTapGesture()
-        
-        if let youtubeVideoId = viewModel?.youtubeVideoId {
-            retrieveYoutubeVideoUrl(youtubeVideoId: youtubeVideoId)
-        }
 
         return [mediaView, textView, actionButton]
     }
