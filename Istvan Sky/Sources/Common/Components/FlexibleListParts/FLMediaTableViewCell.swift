@@ -13,6 +13,13 @@ class FLMediaTableViewCell: UITableViewCell {
     @IBOutlet weak var youtubeButton: UIButton!
     @IBOutlet weak var appleMusicButton: UIButton!
     @IBOutlet weak var listenToLabel: UILabel!
+    @IBOutlet weak var itunesButton: UIButton!
+    @IBOutlet weak var spotifyButton: UIButton!
+    @IBOutlet weak var deezerButton: UIButton!
+    @IBOutlet weak var bandcampButton: UIButton!
+    @IBOutlet weak var amazonButton: UIButton!
+    @IBOutlet weak var tidalButton: UIButton!
+    @IBOutlet weak var googleButton: UIButton!
     
     weak var presenter: FRProxyDataPresenter?
     var buttonTypeMapping: [UIButton : FLViewModelType] = [:]
@@ -20,7 +27,11 @@ class FLMediaTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         [instagramButton, facebookButton,
-         youtubeButton, appleMusicButton].forEach { (button) in
+         youtubeButton, appleMusicButton,
+         itunesButton, spotifyButton,
+         deezerButton, bandcampButton,
+         amazonButton, googleButton,
+         tidalButton].forEach { (button) in
             button.imageView!.contentMode = .scaleAspectFit
         }
         
@@ -28,7 +39,10 @@ class FLMediaTableViewCell: UITableViewCell {
             instagramButton : .instagram,
             facebookButton : .facebook,
             youtubeButton : .youtube,
-            appleMusicButton : .appleMusic
+            appleMusicButton : .appleMusic,
+            itunesButton : .appleiTunes,
+            spotifyButton : .spotify,
+            deezerButton : .deezer,
         ]
     }
     

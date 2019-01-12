@@ -14,6 +14,7 @@ protocol MoreInteractor {
     func tandcFileURL() -> URL
     func privacyFileURL() -> URL
     func thirdpartyURL() -> URL
+    func clearCache()
 }
 
 class MoreInteractorImp: MoreInteractor {
@@ -43,6 +44,10 @@ class MoreInteractorImp: MoreInteractor {
     
     func thirdpartyURL() -> URL {
         return Bundle.bundledThirdPartyFileURL()
+    }
+    
+    func clearCache() {
+        FileManager.clearDocumentsDirectory()
     }
 
 }

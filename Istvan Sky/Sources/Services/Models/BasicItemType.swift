@@ -40,6 +40,7 @@ enum BasicItemType: String {
     case thirdParty = "thirdparty"
     case version
     case tandc
+    case clearcache
     case unknown
     
     init(rawValue: String) {
@@ -75,6 +76,7 @@ enum BasicItemType: String {
         case "thirdparty": self = .thirdParty
         case "version": self = .version
         case "tandc": self = .tandc
+        case "clearcache": self = .clearcache
         default: self = .unknown
         }
     }

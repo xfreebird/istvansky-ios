@@ -69,6 +69,10 @@ class MorePresenterImp: MorePresenter {
             router.navigateLocalHTMLPage(url: interactor.privacyFileURL(), title: viewModel.title)
         case .thirdParty:
             router.navigateLocalHTMLPage(url: interactor.thirdpartyURL(), title: viewModel.title)
+        case .clearcache:
+            view.showConfirmClearCache { [weak self] (remove) in
+                self?.interactor.clearCache()
+            }
 
         default:
             break

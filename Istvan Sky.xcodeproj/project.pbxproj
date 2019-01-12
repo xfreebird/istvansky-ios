@@ -98,6 +98,10 @@
 		D1A1F8D121E21F06004B8C87 /* ExtendedSFSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F8D021E21F06004B8C87 /* ExtendedSFSafariViewController.swift */; };
 		D1A1F8D521E23AD6004B8C87 /* InteractivePopRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F8D421E23AD6004B8C87 /* InteractivePopRecognizer.swift */; };
 		D1A1F8D721E23BCC004B8C87 /* ExtendedUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F8D621E23BCC004B8C87 /* ExtendedUINavigationController.swift */; };
+		D1AEB19E21E9C7A200BA9D91 /* IstvanSkyPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AEB19D21E9C7A200BA9D91 /* IstvanSkyPlayerViewController.swift */; };
+		D1AEB1A121E9E22300BA9D91 /* CachingPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AEB1A021E9E22200BA9D91 /* CachingPlayerItem.swift */; };
+		D1AEB1A321E9E4A200BA9D91 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AEB1A221E9E4A200BA9D91 /* StringUtils.swift */; };
+		D1AEB1A521E9E50100BA9D91 /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AEB1A421E9E50100BA9D91 /* DataUtils.swift */; };
 		D1EF0F4721E49CD1009D6EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EF0F4621E49CD1009D6EC6 /* Assets.xcassets */; };
 		D1EF0F4921E4ECC1009D6EC6 /* FileManagerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF0F4821E4ECC1009D6EC6 /* FileManagerUtils.swift */; };
 		D1F6CDB621E3B9910026AFB6 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F6CDB421E3B9910026AFB6 /* DonateViewController.swift */; };
@@ -232,6 +236,10 @@
 		D1A1F8D021E21F06004B8C87 /* ExtendedSFSafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedSFSafariViewController.swift; sourceTree = "<group>"; };
 		D1A1F8D421E23AD6004B8C87 /* InteractivePopRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractivePopRecognizer.swift; sourceTree = "<group>"; };
 		D1A1F8D621E23BCC004B8C87 /* ExtendedUINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedUINavigationController.swift; sourceTree = "<group>"; };
+		D1AEB19D21E9C7A200BA9D91 /* IstvanSkyPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IstvanSkyPlayerViewController.swift; sourceTree = "<group>"; };
+		D1AEB1A021E9E22200BA9D91 /* CachingPlayerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachingPlayerItem.swift; sourceTree = "<group>"; };
+		D1AEB1A221E9E4A200BA9D91 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		D1AEB1A421E9E50100BA9D91 /* DataUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUtils.swift; sourceTree = "<group>"; };
 		D1EF0F4621E49CD1009D6EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1EF0F4821E4ECC1009D6EC6 /* FileManagerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerUtils.swift; sourceTree = "<group>"; };
 		D1F6CDB421E3B9910026AFB6 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
@@ -666,6 +674,8 @@
 				D16FE60621E4058000282E9A /* BundleUtils.swift */,
 				D1EF0F4821E4ECC1009D6EC6 /* FileManagerUtils.swift */,
 				76FCE13921E8ED6C00158D93 /* UIView.swift */,
+				D1AEB1A221E9E4A200BA9D91 /* StringUtils.swift */,
+				D1AEB1A421E9E50100BA9D91 /* DataUtils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -739,6 +749,7 @@
 				D1A1F8D021E21F06004B8C87 /* ExtendedSFSafariViewController.swift */,
 				D1A1F8D621E23BCC004B8C87 /* ExtendedUINavigationController.swift */,
 				D16FE60421E4043600282E9A /* HTMLFileViewController.swift */,
+				D1AEB19D21E9C7A200BA9D91 /* IstvanSkyPlayerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -778,11 +789,20 @@
 		D195596521D6636D002D7FA4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D1AEB19F21E9E21A00BA9D91 /* Utils */,
 				D12FDE4E21E241C7006646DF /* GestureRecognizers */,
 				D148FC2721DE8FD200396068 /* ViewControllers */,
 				D148FC2621DE8FB000396068 /* FlexibleListParts */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		D1AEB19F21E9E21A00BA9D91 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D1AEB1A021E9E22200BA9D91 /* CachingPlayerItem.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		D4E5B4D6D7F4C2C9DF3BF4BA /* Interactor */ = {
@@ -1038,12 +1058,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Istvan Sky/Pods-Istvan Sky-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessagingDisplay/InAppMessagingDisplayResources.bundle",
+				"${PODS_ROOT}/YoutubeKit/YoutubeKit/player.html",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/InAppMessagingDisplayResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/player.html",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1120,6 +1142,7 @@
 				D13731AC21D565710052C259 /* AshramBlogViewController.swift in Sources */,
 				D1A1F8D121E21F06004B8C87 /* ExtendedSFSafariViewController.swift in Sources */,
 				D12FDE5021E260B8006646DF /* MeditationDetailsViewController.swift in Sources */,
+				D1AEB1A521E9E50100BA9D91 /* DataUtils.swift in Sources */,
 				D13731A821D5635A0052C259 /* AshramBlogItemTableViewCell.swift in Sources */,
 				D148FBF221DC113900396068 /* ItemDetailsViewController.swift in Sources */,
 				D1A1F8CF21E1E6B0004B8C87 /* UIButtonUtils.swift in Sources */,
@@ -1168,12 +1191,14 @@
 				E3B7D6509608F8EFC3614F17 /* TourEventsBuilder.swift in Sources */,
 				D148FC3321DF98F100396068 /* FRProxyDataPresenter.swift in Sources */,
 				9D09C5843B9B2732A5D5A7CA /* AshramPresenter.swift in Sources */,
+				D1AEB1A321E9E4A200BA9D91 /* StringUtils.swift in Sources */,
 				D1705BD121E161C3000A2DEA /* FeedItemDetailsViewController.swift in Sources */,
 				D1705BCF21E14CEE000A2DEA /* AshramBlogItemDetailsViewController.swift in Sources */,
 				D16FE60021E3F19200282E9A /* MoreTableViewDelegate.swift in Sources */,
 				D1705BC721E0E144000A2DEA /* AshramBlogViewDataSource.swift in Sources */,
 				F91C5F37F1FA9F3F511A0865 /* AshramInteractor.swift in Sources */,
 				0EB099CA3DC0FBBA618C1A47 /* AshramRouter.swift in Sources */,
+				D1AEB1A121E9E22300BA9D91 /* CachingPlayerItem.swift in Sources */,
 				868DF0CBD846307F5A018BB6 /* AshramBuilder.swift in Sources */,
 				3D6A850AC0059A838924EDD3 /* HealingMusicViewController.swift in Sources */,
 				492F6919C557BF126E9FA217 /* HealingMusicPresenter.swift in Sources */,
@@ -1182,6 +1207,7 @@
 				FE90D1CCAF37D520BDFA528A /* HealingMusicBuilder.swift in Sources */,
 				9F926DA245E75E0DB2DC6E55 /* DonatePresenter.swift in Sources */,
 				7EA4E488F2C798AF2481B53E /* DonateInteractor.swift in Sources */,
+				D1AEB19E21E9C7A200BA9D91 /* IstvanSkyPlayerViewController.swift in Sources */,
 				D88DDED0CD9A0A83797D59C4 /* DonateRouter.swift in Sources */,
 				A5B04D2A3AD1080D58CE89DA /* DonateBuilder.swift in Sources */,
 				943D37497121641F366D55DF /* MoreViewController.swift in Sources */,

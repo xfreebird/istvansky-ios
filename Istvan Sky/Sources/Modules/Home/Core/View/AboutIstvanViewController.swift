@@ -12,7 +12,7 @@ class AboutIstvanViewController: ItemDetailsViewController {
     weak var presenter: HomePresenter?
     
     override func allScrollViewSubviews() -> [UIView] {
-        mediaView = imageHeaderView()
+        mediaView = contentStreamingView()
         textView = decriptionTextView()
 
         title = viewModel?.title

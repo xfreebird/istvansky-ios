@@ -21,6 +21,8 @@ extension BasicItem {
         let vmType = FLViewModelType(rawValue: type.rawValue)
         var vmListItems: [FLViewModel]? = nil
         let vmHideItemsPreview = hideItemsPreview
+        let vmPlayWithSubtitles = playWithSubtitles
+
         var vmEventDay: String? = nil
         var vmEventMonth: String? = nil
         var vmFormattedBlogDate: String? = nil
@@ -60,6 +62,7 @@ extension BasicItem {
                                   blogFormattedDate: vmFormattedBlogDate,
                                   type: vmType,
                                   hideItemsPreview: vmHideItemsPreview,
+                                  playWithSubtitles: vmPlayWithSubtitles,
                                   audioUrl: vmAudioUrl,
                                   items: vmListItems)
     }

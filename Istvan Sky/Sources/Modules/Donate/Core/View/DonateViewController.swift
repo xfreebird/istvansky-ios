@@ -24,9 +24,18 @@ class DonateViewController: BaseViewController, DonateView {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: false)
+        setupLabel()
         presenter.viewDidLoad()
     }
     
+    func setupLabel() {
+        donateLabel.layer.shadowColor = UIColor.black.cgColor
+        donateLabel.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        donateLabel.layer.shadowOpacity = 1.0
+        donateLabel.layer.shadowRadius = 1.0
+        donateLabel.layer.backgroundColor = UIColor.clear.cgColor
+
+    }
     func updateView(viewModel: FLViewModel) {
         title = viewModel.title
         donateLabel.text = viewModel.description

@@ -24,7 +24,7 @@ class FeedItemDetailsViewController: ItemDetailsViewController {
         title = viewModel?.title
         setupTapGesture()
 
-        return [mediaView, textView, actionButton]
+        return [mediaView, titleHeader(), textView, actionButton]
     }
     
     func setupTapGesture() {

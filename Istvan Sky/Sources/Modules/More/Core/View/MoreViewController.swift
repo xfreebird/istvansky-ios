@@ -11,6 +11,7 @@ import UIKit
 protocol MoreView: class {
     func viewDidLoad()
     func updateView(viewModel: FLViewModel)
+    func showConfirmClearCache(completion: @escaping ((Bool) -> Void))
 }
 
 class MoreViewController: UIViewController, MoreView {
@@ -29,5 +30,21 @@ class MoreViewController: UIViewController, MoreView {
         title = viewModel.title
         tableView.delegate = tableViewDelegate
         tableView.dataSource = tableViewDataSource
+    }
+    
+    func showConfirmClearCache(completion: @escaping ((Bool) -> Void)) {
+        let removeCacheAction = UIAlertAction(title: NSLocalizedString("Remove cache", comment: ""),
+                                                style: .destructive) { (action) in
+                                                    completion(true)
+        }
+        
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""),
+                                         style: .cancel)
+        
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        alert.addAction(removeCacheAction)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
     }
 }

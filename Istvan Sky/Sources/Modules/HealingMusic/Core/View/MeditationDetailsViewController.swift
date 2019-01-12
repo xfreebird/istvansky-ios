@@ -11,7 +11,7 @@ import AVKit
 
 class MeditationDetailsViewController: ItemDetailsViewController {
     weak var presenter: HomePresenter?
-    
+
     override func isAudioOnly() -> Bool {
         return true
     }
@@ -21,6 +21,6 @@ class MeditationDetailsViewController: ItemDetailsViewController {
         textView = decriptionTextView()
 
         title = viewModel?.title
-        return [mediaView, textView]
+        return [mediaView, titleHeader(), textView]
     }
 }

@@ -120,6 +120,7 @@ PODS:
   - SnapKit (4.2.0)
   - Swinject (2.5.0)
   - XCDYouTubeKit (2.7.1)
+  - YoutubeKit (0.3.0)
 
 DEPENDENCIES:
   - Crashlytics
@@ -134,6 +135,7 @@ DEPENDENCIES:
   - SnapKit (~> 4.2.0)
   - Swinject
   - XCDYouTubeKit (~> 2.7)
+  - YoutubeKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -163,6 +165,7 @@ SPEC REPOS:
     - SnapKit
     - Swinject
     - XCDYouTubeKit
+    - YoutubeKit
 
 SPEC CHECKSUMS:
   Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
@@ -191,7 +194,8 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
   XCDYouTubeKit: c8567fd5cb388a3099fa26eee4b30df2a467847d
+  YoutubeKit: a00e9eebcb3cfe26d7e233c5f8591dfd0b08f7a0
 
-PODFILE CHECKSUM: 16211cf6a9e021f7f51a8ae17b61b5224d993d04
+PODFILE CHECKSUM: 713d582f433fd2955c492b57d30d977819e1c3f5
 
 COCOAPODS: 1.5.3

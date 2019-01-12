@@ -8,21 +8,13 @@
 
 import UIKit
 import SnapKit
-import AVKit
 import SafariServices
-import XCDYouTubeKit
 
 class ItemDetailsViewController: BaseViewController {
     var viewModel: FLViewModel?
     var scrollView: UIScrollView!
     var imageView: UIImageView!
     var textView: UITextView!
-    var activityIndicator: UIActivityIndicatorView?
-    var playButton: UIButton?
-    var avPlayer: AVPlayer?
-    let avPlayerController = AVPlayerViewController()
-
-    var observer: Any?
 
     var mediaView: UIView!
     let marginOffset: CGFloat = 9
@@ -37,6 +29,10 @@ class ItemDetailsViewController: BaseViewController {
         layoutComponents()
     }
 
+    func isAudioOnly() -> Bool {
+        return false
+    }
+    
     func layoutComponents() {
         let allSubviews = allScrollViewSubviews()
         if let scrollView = scrollView?.superview {
@@ -101,41 +97,12 @@ class ItemDetailsViewController: BaseViewController {
         }
     }
     
-    func isAudioOnly() -> Bool {
-        return false
-    }
-
-    func addPlayerObserver() {
-        if let observer = observer {
-            avPlayer?.removeTimeObserver(observer)
-            self.observer = nil
-        }
-        
-        let interval = CMTimeMake(value: 1, timescale: 10)
-        observer = avPlayer?.addPeriodicTimeObserver(forInterval: interval, queue: DispatchQueue.main, using: { [weak self] (time) in
-            self?.processPlayerState()
-        })
-    }
-    
-    func processPlayerState() {
-        if avPlayer?.currentItem?.status == AVPlayerItem.Status.readyToPlay {
-            if activityIndicator?.isAnimating ?? false {
-                showStreamingState()
-            }
-        }
-    }
-    
-    deinit {
-        if let observer = observer {
-            avPlayer?.removeTimeObserver(observer)
-            avPlayer = nil
-            self.observer = nil
-        }
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         addShareButton()
+    }
+    
+    deinit {
     }
 
     override func showShareMenu() {
@@ -161,19 +128,53 @@ class ItemDetailsViewController: BaseViewController {
         return customImageView
     }
 
+    func playerViewModel() -> IstvanSkyPlayerViewModel {
+        let link: String? = isAudioOnly() ? viewModel?.audioUrl : nil
+        let youtubeVideoId = viewModel?.youtubeVideoId
+        let thumbnailImagename = viewModel?.imageName
+        let thumbnailImageLink = viewModel?.imageUrl
+        let audioOnly = isAudioOnly()
+        let usePlayerWithSubtitles: Bool = viewModel?.playWithSubtitles ?? false
+        
+
+        let playerViewModel = IstvanSkyPlayerViewModel(link: link,
+                                                       youtubeVideoId: youtubeVideoId,
+                                                       thumbnailImagename: thumbnailImagename,
+                                                       thumbnailImageLink: thumbnailImageLink,
+                                                       isAudioOnly: audioOnly,
+                                                       usePlayerWithSubtitles: usePlayerWithSubtitles)
+        return playerViewModel
+    }
+    
     func contentStreamingView() -> UIView {
         let containerView = UIView()
         containerView.isUserInteractionEnabled = true
         containerView.translatesAutoresizingMaskIntoConstraints = false
 
-        addImageHeader(container: containerView)
-        addPlayButton(container: containerView)
-        addActivityIndicator(container: containerView)
-        addPlayerView(container: containerView)
+        let playerViewController = IstvanSkyPlayerViewController()
+        addChild(playerViewController)
+        containerView.addSubview(playerViewController.view)
+        playerViewController.didMove(toParent: self)
+        playerViewController.view.snp.makeConstraints { (make) in
+            make.top.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.leading.equalToSuperview()
+            make.trailing.equalToSuperview()
+        }
         
+        playerViewController.updateView(viewModel: playerViewModel())
+
         return containerView
     }
     
+    func titleHeader() -> UILabel {
+        let titleLabel = UILabel()
+        titleLabel.text = viewModel?.title
+        titleLabel.numberOfLines = 0
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        return titleLabel
+    }
+
     func decriptionTextView() -> UITextView {
         let customTextView = UITextView(frame: CGRect.zero)
         customTextView.translatesAutoresizingMaskIntoConstraints = true
@@ -184,163 +185,9 @@ class ItemDetailsViewController: BaseViewController {
         customTextView.dataDetectorTypes = .link
         customTextView.isEditable = false
         customTextView.delegate = self
+        customTextView.textContainer.lineFragmentPadding = 0
+        customTextView.textContainerInset = .zero
         return customTextView
-    }
-    
-    func addImageHeader(container: UIView) {
-        imageView = imageHeaderView()
-        container.addSubview(imageView)
-        imageView.snp.makeConstraints { (make) in
-            make.top.equalToSuperview()
-            make.bottom.equalToSuperview()
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
-        }
-    }
-
-    func addPlayButton(container: UIView) {
-        playButton = UIButton(type: .custom)
-        playButton?.setTitle("Play", for: .normal)
-        playButton?.titleLabel?.textColor = UIColor.red
-        playButton?.addTarget(self, action: #selector(playButtonAction), for: .touchUpInside)
-        
-        container.addSubview(playButton!)
-        playButton?.snp.makeConstraints { (make) in
-            make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview()
-            make.width.equalTo(100)
-            make.height.equalTo(40)
-        }
-    }
-
-    func addActivityIndicator(container: UIView) {
-        let activityIndicator = UIActivityIndicatorView(style: .white)
-        self.activityIndicator = activityIndicator
-        container.addSubview(activityIndicator)
-        activityIndicator.snp.makeConstraints { (make) in
-            make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview()
-        }
-        activityIndicator.isHidden = true
-    }
-
-    func addPlayerView(container: UIView) {
-        avPlayer = AVPlayer()
-        addChild(avPlayerController)
-        container.addSubview(avPlayerController.view)
-        avPlayerController.didMove(toParent: self)
-        avPlayerController.showsPlaybackControls = true
-        avPlayerController.player = avPlayer
-        avPlayerController.view.alpha = 0
-        avPlayerController.view.snp.makeConstraints { (make) in
-            make.top.equalToSuperview()
-            make.bottom.equalToSuperview()
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
-        }
-        
-        addPlayerObserver()
-    }
-    
-    func initializePlayer() {
-        showAVPlayerSetupState()
-        
-        if isAudioOnly(),
-            let audioLink = viewModel?.audioUrl,
-            let audioUrl = URL(string: audioLink) {
-            avPlayer?.replaceCurrentItem(with: AVPlayerItem(url: audioUrl))
-            showPreparingToStreamState()
-            
-        } else if let youtubeVideoId = viewModel?.youtubeVideoId {
-            retrieveYoutubeVideoUrl(youtubeVideoId: youtubeVideoId) { [weak self] (youtubeVideoUrl) in
-                if let youtubeVideoUrl = youtubeVideoUrl {
-                    self?.avPlayer?.replaceCurrentItem(with: AVPlayerItem(url: youtubeVideoUrl))
-                    self?.showPreparingToStreamState()
-                }
-            }
-        }
-    }
-    
-    @objc func playButtonAction() {
-        guard let avPlayer = avPlayer else {
-            return
-        }
-        
-        if avPlayer.currentItem == nil {
-            initializePlayer()
-            return
-        }
-        
-        if avPlayer.timeControlStatus == .playing {
-            avPlayer.pause()
-            showReadyToPlayState()
-        } else {
-            showPreparingToStreamState()
-            avPlayer.play()
-        }
-    }
-    
-    func showAVPlayerSetupState() {
-        playButton?.isHidden = true
-        activityIndicator?.isHidden = false
-        avPlayerController.view.alpha = 0
-        activityIndicator?.startAnimating()
-    }
-    
-    func showAVPlayerReadyState() {
-        activityIndicator?.stopAnimating()
-        playButton?.isHidden = false
-        activityIndicator?.isHidden = true
-        avPlayerController.view.alpha = 0
-    }
-    
-    func showReadyToPlayState() {
-        playButton?.setTitle("Play", for: .normal)
-        playButton?.isHidden = false
-        activityIndicator?.isHidden = true
-        avPlayerController.view.alpha = 0
-        activityIndicator?.stopAnimating()
-    }
-    
-    func showPreparingToStreamState() {
-        playButton?.isHidden = true
-        activityIndicator?.isHidden = false
-        avPlayerController.view.alpha = 0
-        activityIndicator?.startAnimating()
-        avPlayer?.play()
-    }
-    
-    func showStreamingState() {
-        activityIndicator?.stopAnimating()
-
-        if isAudioOnly() {
-            showAudioStreamingState()
-        } else {
-            showVideoStreamingState()
-        }
-    }
-
-    func showVideoStreamingState() {
-        playButton?.isHidden = true
-        activityIndicator?.isHidden = true
-        avPlayerController.view.alpha = 1
-    }
-    
-    func showAudioStreamingState() {
-        playButton?.setTitle("Pause", for: .normal)
-        playButton?.isHidden = false
-        activityIndicator?.isHidden = true
-        avPlayerController.view.alpha = 0
-    }
-
-    func retrieveYoutubeVideoUrl(youtubeVideoId: String, completion: @escaping ((URL?) -> Void)) {
-        XCDYouTubeClient.default().getVideoWithIdentifier(youtubeVideoId) { (videoUrl, error) in
-            let sd360VideoQuality = NSNumber(value: XCDYouTubeVideoQuality.medium360.rawValue)
-            let hd720VideoQuality = NSNumber(value: XCDYouTubeVideoQuality.HD720.rawValue)
-            let urls = videoUrl?.streamURLs
-            let streamUrl = urls?[hd720VideoQuality] ?? urls?[sd360VideoQuality]
-            completion(streamUrl)
-        }
     }
 }
 

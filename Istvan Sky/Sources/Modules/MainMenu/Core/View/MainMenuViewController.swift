@@ -50,7 +50,8 @@ class MainMenuViewController: UITabBarController, MainMenuView {
         let image = UIImage(named: viewModel.imageName ?? "")
         viewController.navigationItem.title = viewModel.title
         viewController.tabBarItem = UITabBarItem(title: viewModel.title, image: image, tag: 0)
-        return ExtendedUINavigationController(rootViewController: viewController)
+        let navController = ExtendedUINavigationController(rootViewController: viewController)
+        return navController
     }
     
     func createAllChildViewController(menuViewModelItems: [FLViewModel]) -> [UIViewController] {
