@@ -31,6 +31,7 @@ class TourEventTableViewCell: UITableViewCell {
         frameView.layer.borderWidth = 1.0
         frameView.layer.cornerRadius = 5.0
         frameView.layer.masksToBounds = true
+        eventLogoImageView.makeRoundCorners()
         
         bookButton.configure(title: NSLocalizedString("Book", comment: ""), isHighlighted: true)
         bookButton.addTarget(self, action: #selector(bookButtonTap), for: .touchUpInside)

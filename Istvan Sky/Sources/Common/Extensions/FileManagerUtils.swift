@@ -40,10 +40,18 @@ extension FileManager {
         } catch {
         }
     }
+    
+    static func clearDocumentsDirectory() {
+        let fileManager = FileManager.default
+        guard let documentsDirectory: URL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
 
-    
-    
-
-    
-    
+        do {
+            let items = try fileManager.contentsOfDirectory(at: documentsDirectory, includingPropertiesForKeys: nil)
+            try items.forEach { (item) in
+                try fileManager.removeItem(at: item)
+            }
+            
+        } catch {
+        }
+    }
 }

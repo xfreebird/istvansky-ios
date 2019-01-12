@@ -17,9 +17,8 @@ class AshramBlogItemDetailsViewController: ItemDetailsViewController {
         title = viewModel?.title
         var views: [UIView] = [textView]
         
-        if let youtubeVideoId = viewModel?.youtubeVideoId {
+        if viewModel?.youtubeVideoId != nil {
             views.append(mediaView)
-            retrieveYoutubeVideoUrl(youtubeVideoId: youtubeVideoId)
         }
         
         return views

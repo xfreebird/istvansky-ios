@@ -23,6 +23,7 @@
 		52838879152D4A7B5D7A5D55 /* MainMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBAA4ADB40830F70B4C058 /* MainMenuPresenter.swift */; };
 		53B6CC5C40AA330D5E16DC20 /* MainMenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE5024125C24ECB271D3F8 /* MainMenuInteractor.swift */; };
 		75A777CCA4C0C9E673EE56BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0513D8333A9D9ED8C1F25 /* HomeViewController.swift */; };
+		76FCE13A21E8ED6C00158D93 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FCE13921E8ED6C00158D93 /* UIView.swift */; };
 		7D597A2B28717A8518899D25 /* MoreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF96F40F2564A5A26B33C6D /* MoreInteractor.swift */; };
 		7EA4E488F2C798AF2481B53E /* DonateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD62D0A0A3AE76DC6AFE13 /* DonateInteractor.swift */; };
 		868DF0CBD846307F5A018BB6 /* AshramBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3876EAD2A3D22F688A89DDA6 /* AshramBuilder.swift */; };
@@ -97,6 +98,10 @@
 		D1A1F8D121E21F06004B8C87 /* ExtendedSFSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F8D021E21F06004B8C87 /* ExtendedSFSafariViewController.swift */; };
 		D1A1F8D521E23AD6004B8C87 /* InteractivePopRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F8D421E23AD6004B8C87 /* InteractivePopRecognizer.swift */; };
 		D1A1F8D721E23BCC004B8C87 /* ExtendedUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F8D621E23BCC004B8C87 /* ExtendedUINavigationController.swift */; };
+		D1AEB19E21E9C7A200BA9D91 /* IstvanSkyPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AEB19D21E9C7A200BA9D91 /* IstvanSkyPlayerViewController.swift */; };
+		D1AEB1A121E9E22300BA9D91 /* CachingPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AEB1A021E9E22200BA9D91 /* CachingPlayerItem.swift */; };
+		D1AEB1A321E9E4A200BA9D91 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AEB1A221E9E4A200BA9D91 /* StringUtils.swift */; };
+		D1AEB1A521E9E50100BA9D91 /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AEB1A421E9E50100BA9D91 /* DataUtils.swift */; };
 		D1EF0F4721E49CD1009D6EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EF0F4621E49CD1009D6EC6 /* Assets.xcassets */; };
 		D1EF0F4921E4ECC1009D6EC6 /* FileManagerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF0F4821E4ECC1009D6EC6 /* FileManagerUtils.swift */; };
 		D1F6CDB621E3B9910026AFB6 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F6CDB421E3B9910026AFB6 /* DonateViewController.swift */; };
@@ -148,6 +153,7 @@
 		4D4B0C1AD9DC9781F35E12FC /* TourEventsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TourEventsRouter.swift; sourceTree = "<group>"; };
 		5741B0D2BF2CFC5A3B7E5D5A /* HealingMusicRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealingMusicRouter.swift; sourceTree = "<group>"; };
 		67647690A86FECABF6E3304C /* HealingMusicInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealingMusicInteractor.swift; sourceTree = "<group>"; };
+		76FCE13921E8ED6C00158D93 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		7881AE79759F20139433745A /* TourEventsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TourEventsPresenter.swift; sourceTree = "<group>"; };
 		7ED7489385102DD576EF6297 /* DonatePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DonatePresenter.swift; sourceTree = "<group>"; };
 		87015C5BDD345C0FEC87F5BD /* MoreRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MoreRouter.swift; sourceTree = "<group>"; };
@@ -230,6 +236,10 @@
 		D1A1F8D021E21F06004B8C87 /* ExtendedSFSafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedSFSafariViewController.swift; sourceTree = "<group>"; };
 		D1A1F8D421E23AD6004B8C87 /* InteractivePopRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractivePopRecognizer.swift; sourceTree = "<group>"; };
 		D1A1F8D621E23BCC004B8C87 /* ExtendedUINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedUINavigationController.swift; sourceTree = "<group>"; };
+		D1AEB19D21E9C7A200BA9D91 /* IstvanSkyPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IstvanSkyPlayerViewController.swift; sourceTree = "<group>"; };
+		D1AEB1A021E9E22200BA9D91 /* CachingPlayerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachingPlayerItem.swift; sourceTree = "<group>"; };
+		D1AEB1A221E9E4A200BA9D91 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		D1AEB1A421E9E50100BA9D91 /* DataUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUtils.swift; sourceTree = "<group>"; };
 		D1EF0F4621E49CD1009D6EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1EF0F4821E4ECC1009D6EC6 /* FileManagerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerUtils.swift; sourceTree = "<group>"; };
 		D1F6CDB421E3B9910026AFB6 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
@@ -663,6 +673,9 @@
 				D1A1F8CE21E1E6B0004B8C87 /* UIButtonUtils.swift */,
 				D16FE60621E4058000282E9A /* BundleUtils.swift */,
 				D1EF0F4821E4ECC1009D6EC6 /* FileManagerUtils.swift */,
+				76FCE13921E8ED6C00158D93 /* UIView.swift */,
+				D1AEB1A221E9E4A200BA9D91 /* StringUtils.swift */,
+				D1AEB1A421E9E50100BA9D91 /* DataUtils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -736,6 +749,7 @@
 				D1A1F8D021E21F06004B8C87 /* ExtendedSFSafariViewController.swift */,
 				D1A1F8D621E23BCC004B8C87 /* ExtendedUINavigationController.swift */,
 				D16FE60421E4043600282E9A /* HTMLFileViewController.swift */,
+				D1AEB19D21E9C7A200BA9D91 /* IstvanSkyPlayerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -775,11 +789,20 @@
 		D195596521D6636D002D7FA4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D1AEB19F21E9E21A00BA9D91 /* Utils */,
 				D12FDE4E21E241C7006646DF /* GestureRecognizers */,
 				D148FC2721DE8FD200396068 /* ViewControllers */,
 				D148FC2621DE8FB000396068 /* FlexibleListParts */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		D1AEB19F21E9E21A00BA9D91 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D1AEB1A021E9E22200BA9D91 /* CachingPlayerItem.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		D4E5B4D6D7F4C2C9DF3BF4BA /* Interactor */ = {
@@ -1119,6 +1142,7 @@
 				D13731AC21D565710052C259 /* AshramBlogViewController.swift in Sources */,
 				D1A1F8D121E21F06004B8C87 /* ExtendedSFSafariViewController.swift in Sources */,
 				D12FDE5021E260B8006646DF /* MeditationDetailsViewController.swift in Sources */,
+				D1AEB1A521E9E50100BA9D91 /* DataUtils.swift in Sources */,
 				D13731A821D5635A0052C259 /* AshramBlogItemTableViewCell.swift in Sources */,
 				D148FBF221DC113900396068 /* ItemDetailsViewController.swift in Sources */,
 				D1A1F8CF21E1E6B0004B8C87 /* UIButtonUtils.swift in Sources */,
@@ -1158,6 +1182,7 @@
 				30D70F40C45A8AE9AEB9697B /* TourEventsRouter.swift in Sources */,
 				D148FC2D21DEB1E900396068 /* BasicItemUtils.swift in Sources */,
 				D148FC3721DFA52E00396068 /* FLCollectionViewDelegate.swift in Sources */,
+				76FCE13A21E8ED6C00158D93 /* UIView.swift in Sources */,
 				D148FC5F21E09E1E00396068 /* TimeZoneUtils.swift in Sources */,
 				D1705BC921E0E15E000A2DEA /* AshramBlogViewDelegate.swift in Sources */,
 				D148FC3121DF96A500396068 /* FLViewModel.swift in Sources */,
@@ -1166,12 +1191,14 @@
 				E3B7D6509608F8EFC3614F17 /* TourEventsBuilder.swift in Sources */,
 				D148FC3321DF98F100396068 /* FRProxyDataPresenter.swift in Sources */,
 				9D09C5843B9B2732A5D5A7CA /* AshramPresenter.swift in Sources */,
+				D1AEB1A321E9E4A200BA9D91 /* StringUtils.swift in Sources */,
 				D1705BD121E161C3000A2DEA /* FeedItemDetailsViewController.swift in Sources */,
 				D1705BCF21E14CEE000A2DEA /* AshramBlogItemDetailsViewController.swift in Sources */,
 				D16FE60021E3F19200282E9A /* MoreTableViewDelegate.swift in Sources */,
 				D1705BC721E0E144000A2DEA /* AshramBlogViewDataSource.swift in Sources */,
 				F91C5F37F1FA9F3F511A0865 /* AshramInteractor.swift in Sources */,
 				0EB099CA3DC0FBBA618C1A47 /* AshramRouter.swift in Sources */,
+				D1AEB1A121E9E22300BA9D91 /* CachingPlayerItem.swift in Sources */,
 				868DF0CBD846307F5A018BB6 /* AshramBuilder.swift in Sources */,
 				3D6A850AC0059A838924EDD3 /* HealingMusicViewController.swift in Sources */,
 				492F6919C557BF126E9FA217 /* HealingMusicPresenter.swift in Sources */,
@@ -1180,6 +1207,7 @@
 				FE90D1CCAF37D520BDFA528A /* HealingMusicBuilder.swift in Sources */,
 				9F926DA245E75E0DB2DC6E55 /* DonatePresenter.swift in Sources */,
 				7EA4E488F2C798AF2481B53E /* DonateInteractor.swift in Sources */,
+				D1AEB19E21E9C7A200BA9D91 /* IstvanSkyPlayerViewController.swift in Sources */,
 				D88DDED0CD9A0A83797D59C4 /* DonateRouter.swift in Sources */,
 				A5B04D2A3AD1080D58CE89DA /* DonateBuilder.swift in Sources */,
 				943D37497121641F366D55DF /* MoreViewController.swift in Sources */,

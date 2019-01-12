@@ -40,6 +40,7 @@ enum FLViewModelType: String {
     case thirdParty
     case version
     case tandc
+    case clearcache
     case unknown
     
     init(rawValue: String) {
@@ -75,6 +76,7 @@ enum FLViewModelType: String {
         case "thirdparty": self = .thirdParty
         case "version": self = .version
         case "tandc": self = .tandc
+        case "clearcache": self = .clearcache
         default: self = .unknown
         }
     }
@@ -97,6 +99,7 @@ struct FLViewModel {
     let blogFormattedDate: String?
     let type: FLViewModelType
     let hideItemsPreview: Bool
+    let playWithSubtitles: Bool
     let audioUrl: String?
     let items: [FLViewModel]?
     
@@ -116,6 +119,7 @@ struct FLViewModel {
          blogFormattedDate: String?,
          type: FLViewModelType,
          hideItemsPreview: Bool,
+         playWithSubtitles: Bool,
          audioUrl: String?,
          items: [FLViewModel]?) {
         self.title = title
@@ -134,6 +138,7 @@ struct FLViewModel {
         self.blogFormattedDate = blogFormattedDate
         self.type = type
         self.hideItemsPreview = hideItemsPreview
+        self.playWithSubtitles = playWithSubtitles
         self.audioUrl = audioUrl
         self.items = items
     }
@@ -157,6 +162,7 @@ struct FLViewModel {
         eventDay = nil
         blogFormattedDate = nil
         hideItemsPreview = false
+        playWithSubtitles = false
         audioUrl = nil
         items = nil
     }
@@ -178,6 +184,7 @@ struct FLViewModel {
         blogFormattedDate = nil
         type = .unknown
         hideItemsPreview = false
+        playWithSubtitles = false
         audioUrl = nil
         items = nil
     }

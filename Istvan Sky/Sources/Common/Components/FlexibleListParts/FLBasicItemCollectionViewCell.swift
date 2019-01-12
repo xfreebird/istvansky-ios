@@ -15,6 +15,7 @@ class FLBasicItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var subtitleLabel: UILabel!
 
     func updateView(viewModel: FLViewModel) {
+        imageView.makeRoundCorners()
         imageView.updateImage(imageName: viewModel.imageName,
                               imageURL: viewModel.imageUrl)
         titleLabel.text = viewModel.title

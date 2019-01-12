@@ -20,7 +20,7 @@ class MoreTableViewDataSource: NSObject, UITableViewDataSource {
         let cell = UITableViewCell(frame: CGRect.zero)
         cell.textLabel?.text = viewModel.title
         
-        if viewModel.type == .version {
+        if viewModel.type == .version || viewModel.type == .clearcache {
             cell.selectionStyle = .none
         } else {
             cell.accessoryType = .disclosureIndicator

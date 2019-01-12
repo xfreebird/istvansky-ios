@@ -12,6 +12,14 @@
           "type": "feed",
           "items": [
             {
+              "title": "Spirit from the sky healing concert",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/istvan-sky-beta.appspot.com/o/images%2Fistvan-belgium-concert-1.jpg?alt=media&token=df6ad5cd-002e-4a6e-b6f7-b8237a225327",
+              "content": "Join Istvan at his healing concert from Belgium. The event will take place at Château de Bossuit. More details will be available soon...",
+              "webUrl": "http://istvansky.com",
+              "actionTitle": "Tour dates",
+              "type": "tour"
+            },
+            {
               "title": "Dakini 2019",
               "imageUrl": "http://istvansky.com/wp-content/uploads/2018/10/43729521_702802800094088_7420351019466358784_n.jpg",
               "content": "“We are honoured to announce that István Sky -healer, singer, musician and spiritual teacher – will be part of Dakini Festival 2019.”",
@@ -34,6 +42,7 @@
               "content": "Istvan Sky has been living near the forest for more than a decade. Learn about him and how he lives for inspiration in your own life.",
               "webUrl": "https://www.youtube.com/watch?v=l8Xc2amoUz8",
               "youtubeVideoId": "l8Xc2amoUz8",
+              "playWithSubtitles": true,
               "actionTitle": "About Istvan",
               "type": "about"
             }
@@ -44,6 +53,8 @@
           "imageName": "istvan",
           "content": "Istvan started learning music as a young boy and has kept doing so to this day. He studied singing and music first from his family, from nature, then from Indian and Tibetan Masters. In 1990 he became the disciple of the renowned sarod maestro Smt. Sharan Rani in New Delhi, from whom he learned complex spiritual musical art (table, vocals and sarod), and who got him acquainted with the Eastern way of life and philosophy. Istvan has taught and participated in a number of international concerts, including the World Music Festival in Delhi. He tours with his worldwide unique chanting voice and healing music and had full house concerts in India, Switzerland, Austria, Hungary, and all over the world, from Singapore to Mexico. He has been having a lot of workshops, too, where he teaches his singing technics.\n\nMagnificent energy from the heart. When you live in nature, in the scent of flowers, in the blessed light of the day and the sweet dew of the morning, you don’t have questions, you simply live and joy together with them. Your heart opens, you cry, cry, and your eyes are wet with dew. This is how this song was born, when your body, mind, and soul opens, God steps next to you in an unguarded moment, and pours her treasures into you.",
           "webUrl": "http://istvansky.com/about/",
+          "youtubeVideoId": "l8Xc2amoUz8",
+          "playWithSubtitles": true,
           "type": "about"
         },
         {
@@ -97,14 +108,15 @@
       "title": "Healing Music",
       "type": "music",
       "imageName": "menu-healing",
-      "webUrl": "http://istvansky.com",
+      "webUrl": "https://istvansky.bandcamp.com/",
       "items": [
         {
           "title": "Healing Meditations",
           "type": "meditations",
+          "content": "Listening to healing music creates harmony in humans, restores the disrupted balance of the body and soul, and smoothes heartbeat and respiration. The healing sound is born in a deep meditative state. Just sit in silence in nature. Let the ancient cosmic harmony probe deeply into your heart. Breathe slowly and listen to the songs of trees, plants and birds. Breathe together with the spring, be the unfolding flower, breathe together with the summer, and with the miracle of completeness. Breathe together with the autumn, with the passing of time and breathe together with the quiet stillnes of winter. 🌻",
           "items": [
             {
-              "title": "Healing Meditation 30 mins",
+              "title": "Heart Meditation",
               "imageUrl": "https://img.youtube.com/vi/sx3fHQvgG9I/maxresdefault.jpg",
               "content": "The Healing sounds are born in endless cosmic silence, filling each and every part of this splendidly luminous world.\nMake yourself humble to let the harmony of the divine love touch you.\n\nBe the creating silence yourself that brings peace and joy to those who are craving for.\nLet the desire for awakening be born in you, for the eyes to see clear, for the ears to hear flawless, for the words to be true and for the flower of your heart to discover love.\n\nPlease, relax and concentrate on your breathing, open your eyes just a little bit so you don't fall asleep. Breathe in deep this music, let it heal your body no matter your illness, and travel with me to this wonderful world. Sit below the almond tree with me, in a deep trance, deep meditation, in deep divine love.",
               "webUrl": "https://www.youtube.com/watch?v=sx3fHQvgG9I",
@@ -113,7 +125,7 @@
               "type": "meditation"
             },
             {
-              "title": "Istvan Sky - Butterfly man Blessings Om Meditation",
+              "title": "Butterfly man Blessings Om Meditation",
               "imageUrl": "https://img.youtube.com/vi/O3jBxRzo42I/maxresdefault.jpg",
               "content": "Please, relax and concentrate on your breathing, open your eyes just a little bit so you don't fall asleep. Breathe in deep this music, let it heal your body no matter your illness, and travel with me to this wonderful world. Sit below the almond tree with me, in a deep trance, deep meditation, in deep divine love.",
               "webUrl": "https://www.youtube.com/watch?v=O3jBxRzo42I",
@@ -145,14 +157,32 @@
           "title": "",
           "imageName": "support",
           "type": "support",
-          "content": "Please Enjoy Istvan Sky's Healing Music on Apple Music and on other similar popular services",
+          "content": "#istvansky\nListening to healing music creates harmony in humans, restores the disrupted balance of the body and soul, and smoothes heartbeat and respiration. The healing sound is born in a deep meditative state. Just sit in silence in nature. Let the ancient cosmic harmony probe deeply into your heart. Breathe slowly and listen to the songs of trees, plants and birds. Breathe together with the spring, be the unfolding flower, breathe together with the summer, and with the miracle of completeness. Breathe together with the autumn, with the passing of time and breathe together with the quiet stillnes of winter. 🌻\n\nPlease Enjoy Istvan Sky's Healing Music on Apple Music and on other similar popular services 🙏",
           "hideItemsPreview": true,
           "items": [
             {
               "title": "Listen on Apple Music",
               "imageName": "apple-music",
-              "webUrl": "https://itunes.apple.com/us/artist/istvan-sky/965794026",
+              "webUrl": "https://itunes.apple.com/us/artist/istvan-sky/965794026?mt=1&app=music",
               "type": "applemusic"
+            },
+            {
+              "title": "Buy on iTunes",
+              "imageName": "itunes",
+              "webUrl": "https://itunes.apple.com/us/artist/istvan-sky/965794026?app=itunes",
+              "type": "appleitunes"
+            },
+            {
+              "title": "Listen on Spotify",
+              "imageName": "spotify",
+              "webUrl": "spotify://artist/3ASrFORWae2H8quuvPPcdm",
+              "type": "spotify"
+            },
+            {
+              "title": "Listen on Deezer",
+              "imageName": "deezer",
+              "webUrl": "deezer:///artist/7523014",
+              "type": "deezer"
             },
             {
               "title": "Listen on Youtube",
@@ -182,6 +212,15 @@
       "imageName": "menu-tour",
       "webUrl": "http://istvansky.com/tour-dates/",
       "items": [
+        {
+          "title": "Spirit from the sky healing concert, Belgium",
+          "imageUrl": "https://firebasestorage.googleapis.com/v0/b/istvan-sky-beta.appspot.com/o/images%2Fistvan-belgium-concert-1.jpg?alt=media&token=df6ad5cd-002e-4a6e-b6f7-b8237a225327",
+          "webUrl": "http://istvansky.com",
+          "date": "2019-05-18T17:00:00+0000",
+          "endDate": "2019-05-19T19:59:00+0000",
+          "timeZone": "1",
+          "type": "event"
+        },
         {
           "title": "Dakini Festival 2019",
           "imageUrl": "http://istvansky.com/wp-content/uploads/2018/10/43729521_702802800094088_7420351019466358784_n.jpg",
@@ -219,6 +258,11 @@
           "title": "Acknowledgements",
           "type": "thirdparty"
         },
+        {
+          "title": "Clear cached data",
+          "type": "clearcache"
+        },
+
         {
           "title": "App version",
           "type": "version"

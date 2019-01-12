@@ -8,18 +8,13 @@
 
 import UIKit
 import SnapKit
-import AVKit
-import YoutubeKit
 import SafariServices
-import XCDYouTubeKit
 
 class ItemDetailsViewController: BaseViewController {
     var viewModel: FLViewModel?
     var scrollView: UIScrollView!
     var imageView: UIImageView!
     var textView: UITextView!
-    var avPlayer: AVPlayer?
-    let avPlayerController = AVPlayerViewController()
 
     var mediaView: UIView!
     let marginOffset: CGFloat = 9
@@ -34,6 +29,10 @@ class ItemDetailsViewController: BaseViewController {
         layoutComponents()
     }
 
+    func isAudioOnly() -> Bool {
+        return false
+    }
+    
     func layoutComponents() {
         let allSubviews = allScrollViewSubviews()
         if let scrollView = scrollView?.superview {
@@ -102,6 +101,9 @@ class ItemDetailsViewController: BaseViewController {
         super.viewDidLoad()
         addShareButton()
     }
+    
+    deinit {
+    }
 
     override func showShareMenu() {
         if let title = viewModel?.title,
@@ -113,6 +115,7 @@ class ItemDetailsViewController: BaseViewController {
 
     func imageHeaderView() -> UIImageView {
         let customImageView = UIImageView(image: nil)
+        customImageView.makeRoundCorners()
         customImageView.translatesAutoresizingMaskIntoConstraints = true
         
         customImageView.updateImage(imageName: viewModel?.imageName, imageURL: viewModel?.imageUrl)
@@ -125,23 +128,53 @@ class ItemDetailsViewController: BaseViewController {
         return customImageView
     }
 
+    func playerViewModel() -> IstvanSkyPlayerViewModel {
+        let link: String? = isAudioOnly() ? viewModel?.audioUrl : nil
+        let youtubeVideoId = viewModel?.youtubeVideoId
+        let thumbnailImagename = viewModel?.imageName
+        let thumbnailImageLink = viewModel?.imageUrl
+        let audioOnly = isAudioOnly()
+        let usePlayerWithSubtitles: Bool = viewModel?.playWithSubtitles ?? false
+        
+
+        let playerViewModel = IstvanSkyPlayerViewModel(link: link,
+                                                       youtubeVideoId: youtubeVideoId,
+                                                       thumbnailImagename: thumbnailImagename,
+                                                       thumbnailImageLink: thumbnailImageLink,
+                                                       isAudioOnly: audioOnly,
+                                                       usePlayerWithSubtitles: usePlayerWithSubtitles)
+        return playerViewModel
+    }
+    
     func contentStreamingView() -> UIView {
         let containerView = UIView()
         containerView.isUserInteractionEnabled = true
         containerView.translatesAutoresizingMaskIntoConstraints = false
 
-        imageView = imageHeaderView()
-        containerView.addSubview(imageView)
-        imageView.snp.makeConstraints { (make) in
+        let playerViewController = IstvanSkyPlayerViewController()
+        addChild(playerViewController)
+        containerView.addSubview(playerViewController.view)
+        playerViewController.didMove(toParent: self)
+        playerViewController.view.snp.makeConstraints { (make) in
             make.top.equalToSuperview()
             make.bottom.equalToSuperview()
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()
         }
+        
+        playerViewController.updateView(viewModel: playerViewModel())
 
         return containerView
     }
     
+    func titleHeader() -> UILabel {
+        let titleLabel = UILabel()
+        titleLabel.text = viewModel?.title
+        titleLabel.numberOfLines = 0
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        return titleLabel
+    }
+
     func decriptionTextView() -> UITextView {
         let customTextView = UITextView(frame: CGRect.zero)
         customTextView.translatesAutoresizingMaskIntoConstraints = true
@@ -152,41 +185,9 @@ class ItemDetailsViewController: BaseViewController {
         customTextView.dataDetectorTypes = .link
         customTextView.isEditable = false
         customTextView.delegate = self
+        customTextView.textContainer.lineFragmentPadding = 0
+        customTextView.textContainerInset = .zero
         return customTextView
-    }
-    
-    func addVideoStreamingView(url: URL) {
-        avPlayer = AVPlayer(url: url)
-        addChild(avPlayerController)
-        mediaView.addSubview(avPlayerController.view)
-        avPlayerController.didMove(toParent: self)
-        avPlayerController.showsPlaybackControls = true
-        avPlayerController.player = avPlayer
-        avPlayerController.view.snp.makeConstraints { (make) in
-            make.top.equalToSuperview()
-            make.bottom.equalToSuperview()
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
-        }
-        view.layoutSubviews()
-    }
-    
-    func retrieveYoutubeVideoUrl(youtubeVideoId: String) {
-        XCDYouTubeClient.default().getVideoWithIdentifier(youtubeVideoId) { [weak self] (videoUrl, error) in
-            let sd360VideoQuality = NSNumber(value: XCDYouTubeVideoQuality.medium360.rawValue)
-            let hd720VideoQuality = NSNumber(value: XCDYouTubeVideoQuality.HD720.rawValue)
-            let urls = videoUrl?.streamURLs
-            let streamUrl = urls?[hd720VideoQuality] ?? urls?[sd360VideoQuality]
-            if let streamUrl = streamUrl {
-                self?.addVideoStreamingView(url: streamUrl)
-            }
-        }
-    }
-}
-
-extension ItemDetailsViewController: YTSwiftyPlayerDelegate {
-    func playerReady(_ player: YTSwiftyPlayer) {
-        player.alpha = 1
     }
 }
 

@@ -23,6 +23,7 @@ struct BasicItem: Unmarshaling {
     let endDate: Date?
     let timeZone: TimeZone?
     let hideItemsPreview: Bool
+    let playWithSubtitles: Bool
     let audioUrl: LocalizedValue?
     let items: [BasicItem]?
     
@@ -41,7 +42,10 @@ struct BasicItem: Unmarshaling {
         items = try object.value(for: "items")
         audioUrl = try object.value(for: "audioUrl")
         
-        let boolValue: Bool? = try object.value(for: "hideItemsPreview")
+        var boolValue: Bool? = try object.value(for: "hideItemsPreview")
         hideItemsPreview = boolValue ?? false
+
+        boolValue = try object.value(for: "playWithSubtitles")
+        playWithSubtitles = boolValue ?? false
     }
 }

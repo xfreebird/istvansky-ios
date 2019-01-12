@@ -17,8 +17,8 @@ target 'Istvan Sky' do
   pod 'Marshal', :modular_headers => true
   pod 'Swinject'
   pod 'SDWebImage', '~> 4.0'
-  pod 'YoutubeKit'
   pod 'XCDYouTubeKit', '~> 2.7'
+  pod 'YoutubeKit'
 end
 
 post_install do |installer|
