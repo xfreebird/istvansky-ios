@@ -19,14 +19,16 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>3</string>
-    <key>ITSAppUsesNonExemptEncryption</key>
-    <false/>
+	<string>4</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>deezer</string>
 		<string>fb</string>
 		<string>spotify</string>
+		<string>googleplaymusic</string>
+		<string>amznmp3</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>

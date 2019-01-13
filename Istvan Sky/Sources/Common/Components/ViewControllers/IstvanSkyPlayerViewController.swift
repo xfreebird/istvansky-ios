@@ -118,9 +118,14 @@ class IstvanSkyPlayerViewController: UIViewController, IstvanSkyPlayer {
             avPlayer?.removeTimeObserver(observer)
             avPlayer?.pause()
             avPlayer = nil
-            avPlayerController = nil
             self.observer = nil
         }
+
+        avPlayerController?.player = nil
+        avPlayerController?.willMove(toParent: nil)
+        avPlayerController?.view.removeFromSuperview()
+        avPlayerController?.removeFromParent()
+        avPlayerController = nil
     }
     
     func imageHeaderView() -> UIImageView {
@@ -230,6 +235,8 @@ class IstvanSkyPlayerViewController: UIViewController, IstvanSkyPlayer {
                 make.leading.equalToSuperview()
                 make.trailing.equalToSuperview()
             }
+            youtubePlayerWithSubtitles.alpha = 0
+            youtubePlayerWithSubtitles.delegate = self
             youtubePlayerWithSubtitles.autoplay = true
             youtubePlayerWithSubtitles.loadPlayer()
         }
@@ -240,6 +247,7 @@ class IstvanSkyPlayerViewController: UIViewController, IstvanSkyPlayer {
     func loadPlayer() {
         if usePlayerWithSubtitles {
             addiFramePlayer(container: view)
+            state = .preparingToStream
             return
         }
 
@@ -338,6 +346,11 @@ extension IstvanSkyPlayerViewController {
     }
 }
 
+extension IstvanSkyPlayerViewController: YTSwiftyPlayerDelegate {
+    func youtubeIframeAPIReady(_ player: YTSwiftyPlayer) {
+        player.alpha = 1
+    }
+}
 extension IstvanSkyPlayerViewController: CachingPlayerItemDelegate {
     func playerItem(for url: URL) -> CachingPlayerItem {
         if let urlLink = url.absoluteString.hashed(.md5),

@@ -120,7 +120,7 @@ PODS:
   - SnapKit (4.2.0)
   - Swinject (2.5.0)
   - XCDYouTubeKit (2.7.1)
-  - YoutubeKit (0.3.0)
+  - YoutubeKit (0.3.1)
 
 DEPENDENCIES:
   - Crashlytics
@@ -135,7 +135,7 @@ DEPENDENCIES:
   - SnapKit (~> 4.2.0)
   - Swinject
   - XCDYouTubeKit (~> 2.7)
-  - YoutubeKit
+  - YoutubeKit (from `https://github.com/xfreebird/YoutubeKit.git`, branch `master`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -165,7 +165,16 @@ SPEC REPOS:
     - SnapKit
     - Swinject
     - XCDYouTubeKit
-    - YoutubeKit
+
+EXTERNAL SOURCES:
+  YoutubeKit:
+    :branch: master
+    :git: https://github.com/xfreebird/YoutubeKit.git
+
+CHECKOUT OPTIONS:
+  YoutubeKit:
+    :commit: 71e8bdea56c86dfb43a3ad6d7747742d73db8093
+    :git: https://github.com/xfreebird/YoutubeKit.git
 
 SPEC CHECKSUMS:
   Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
@@ -194,8 +203,8 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
   XCDYouTubeKit: c8567fd5cb388a3099fa26eee4b30df2a467847d
-  YoutubeKit: a00e9eebcb3cfe26d7e233c5f8591dfd0b08f7a0
+  YoutubeKit: fde6597d3c198f8834cd363dca3b6bdfa3c97c6f
 
-PODFILE CHECKSUM: 713d582f433fd2955c492b57d30d977819e1c3f5
+PODFILE CHECKSUM: 9cec6e1946e9b7aef6d70e17b2d34b3bd59d9594
 
 COCOAPODS: 1.5.3

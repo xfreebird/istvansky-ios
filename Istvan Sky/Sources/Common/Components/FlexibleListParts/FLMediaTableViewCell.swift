@@ -43,6 +43,8 @@ class FLMediaTableViewCell: UITableViewCell {
             itunesButton : .appleiTunes,
             spotifyButton : .spotify,
             deezerButton : .deezer,
+            googleButton : .googleMusic,
+            amazonButton : .amazon
         ]
     }
     

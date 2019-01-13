@@ -18,7 +18,7 @@ target 'Istvan Sky' do
   pod 'Swinject'
   pod 'SDWebImage', '~> 4.0'
   pod 'XCDYouTubeKit', '~> 2.7'
-  pod 'YoutubeKit'
+  pod 'YoutubeKit', :git => 'https://github.com/xfreebird/YoutubeKit.git', :branch => 'master'
 end
 
 post_install do |installer|

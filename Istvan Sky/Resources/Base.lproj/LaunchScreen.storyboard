@@ -24,7 +24,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-background" translatesAutoresizingMaskIntoConstraints="NO" id="2R7-9t-g5a">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="istvan-logo" translatesAutoresizingMaskIntoConstraints="NO" id="MXA-2Y-80J">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="istvan-logo" translatesAutoresizingMaskIntoConstraints="NO" id="MXA-2Y-80J">
                                 <rect key="frame" x="53" y="0.0" width="308" height="263"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="263" id="Hqr-0P-QWK"/>

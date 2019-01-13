@@ -103,6 +103,7 @@ class ItemDetailsViewController: BaseViewController {
     }
     
     deinit {
+        mediaView = nil        
     }
 
     override func showShareMenu() {

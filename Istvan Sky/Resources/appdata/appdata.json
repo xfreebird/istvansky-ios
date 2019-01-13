@@ -185,6 +185,18 @@
               "type": "deezer"
             },
             {
+              "title": "Listen on Google Music",
+              "imageName": "google-music",
+              "webUrl": "googleplaymusic://music/preview/A6cvzu63bsqjibdvjfqa2plvzk4",
+              "type": "googlemusic"
+            },
+            {
+              "title": "Listen on Amazon Music",
+              "imageName": "amazon-music",
+              "webUrl": "amznmp3://s/ref=dm_aw_ps_adp?search-alias=digital-music&k=Istvan+Sky",
+              "type": "amazonmusic"
+            },
+            {
               "title": "Listen on Youtube",
               "imageName": "youtube",
               "webUrl": "https://www.youtube.com/channel/UColJKcjFMJPzAS9R9rcZWkA",
