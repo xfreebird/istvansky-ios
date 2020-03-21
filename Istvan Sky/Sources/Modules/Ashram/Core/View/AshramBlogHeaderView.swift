@@ -29,7 +29,7 @@ class AshramBlogHeaderView: UIView {
     func setupView() {
         autoresizingMask = [.flexibleWidth, .flexibleHeight]
         translatesAutoresizingMaskIntoConstraints = true
-        backgroundColor = .clear
+        backgroundColor = .groupTableViewBackground
         
         imageView = UIImageView(frame: CGRect.zero)
 

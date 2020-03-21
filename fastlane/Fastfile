@@ -18,6 +18,11 @@ platform :ios do
     pilot
   end
 
+  lane :adhoc do
+    build
+    firebase_app_distribution
+  end
+
   after_all do |lane|
     en_remove_keychain
   end

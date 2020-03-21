@@ -20,6 +20,7 @@ class FLMediaTableViewCell: UITableViewCell {
     @IBOutlet weak var amazonButton: UIButton!
     @IBOutlet weak var tidalButton: UIButton!
     @IBOutlet weak var googleButton: UIButton!
+    @IBOutlet weak var followIstvanSkyLabel: UILabel!
     
     weak var presenter: FRProxyDataPresenter?
     var buttonTypeMapping: [UIButton : FLViewModelType] = [:]
@@ -48,9 +49,23 @@ class FLMediaTableViewCell: UITableViewCell {
         ]
     }
     
+    func updateColors(to traitCollection: UITraitCollection) {
+        if #available(iOS 12.0, *) {
+            if traitCollection.userInterfaceStyle == .dark {
+                listenToLabel.textColor = .lightGray
+                followIstvanSkyLabel.textColor = .lightGray
+                return
+            }
+        }
+        
+        listenToLabel.textColor = .darkGray
+        followIstvanSkyLabel.textColor = .darkGray
+
+    }
+
     func updateView(viewModel: FLViewModel) {
         listenToLabel.text = viewModel.description
-        
+        updateColors(to: traitCollection)
     }
     
     @IBAction func buttonTap(_ sender: Any) {

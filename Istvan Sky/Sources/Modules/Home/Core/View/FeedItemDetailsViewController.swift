@@ -20,7 +20,8 @@ class FeedItemDetailsViewController: ItemDetailsViewController {
         actionButton.configure(title: viewModel?.actionTitle)
         actionButton.layer.borderColor = UIColor.lightGray.cgColor
         actionButton.addTarget(self, action: #selector(actionButtonTap), for: .touchUpInside)
-        
+        actionButton.setTitleColor(.globalTintColor(), for: .normal)
+
         title = viewModel?.title
         setupTapGesture()
 

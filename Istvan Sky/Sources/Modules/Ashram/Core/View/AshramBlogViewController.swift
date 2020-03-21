@@ -33,8 +33,6 @@ class AshramBlogViewController: UIViewController,  AshramView {
         
         tableView.register(UINib(nibName: itemCellType, bundle: nil), forCellReuseIdentifier: itemCellType)
         
-        tableView.backgroundView = nil
-        tableView.backgroundColor = UIColor.clear
         tableView.delegate = tableViewDelegate
         tableView.dataSource = tableViewDataSource
         presenter.viewDidLoad()

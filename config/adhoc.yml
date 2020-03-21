@@ -1,0 +1,36 @@
+Istvan Sky.xcodeproj:
+  common:
+    CODE_SIGN_IDENTITY: iOS Distribution
+    DEVELOPMENT_TEAM: H86U5Z8HYB
+    CODE_SIGN_STYLE: Manual
+    BUNDLE_ID: com.istvansky.app.ios.adhoc
+  targets:
+    Istvan Sky:
+      PRODUCT_BUNDLE_IDENTIFIER: ${BUNDLE_ID}
+      PROVISIONING_PROFILE_SPECIFIER: match AdHoc $(PRODUCT_BUNDLE_IDENTIFIER)
+    NSE:
+      PRODUCT_BUNDLE_IDENTIFIER: ${BUNDLE_ID}.NSE
+      PROVISIONING_PROFILE_SPECIFIER: match AdHoc $(PRODUCT_BUNDLE_IDENTIFIER)
+
+Istvan Sky/Info.plist:
+  CFBundleDisplayName: Istvan Sky AdHoc
+
+Istvan Sky/Istvan Sky.entitlements:
+  aps-environment: production
+
+Istvan Sky/Resources/GoogleService-Info.plist:
+  CLIENT_ID: 590121688667-85tbtq708se1l679r4haqisvackkqc40.apps.googleusercontent.com
+  REVERSED_CLIENT_ID: com.googleusercontent.apps.590121688667-85tbtq708se1l679r4haqisvackkqc40
+  API_KEY: AIzaSyAA-s2NxPqfDLF8KihKU4mI2ei0Tp0CjAc
+  GCM_SENDER_ID: '590121688667'
+  PLIST_VERSION: '1'
+  BUNDLE_ID: com.istvansky.app.ios.adhoc
+  PROJECT_ID: istvan-sky-beta
+  STORAGE_BUCKET: istvan-sky-beta.appspot.com
+  IS_ADS_ENABLED: false
+  IS_ANALYTICS_ENABLED: false
+  IS_APPINVITE_ENABLED: true
+  IS_GCM_ENABLED: true
+  IS_SIGNIN_ENABLED: true
+  GOOGLE_APP_ID: 1:590121688667:ios:5090b6b1dced355c38a97e
+  DATABASE_URL: https://istvan-sky-beta.firebaseio.com

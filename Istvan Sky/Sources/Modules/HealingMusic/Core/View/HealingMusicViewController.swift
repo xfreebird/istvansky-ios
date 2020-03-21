@@ -32,10 +32,6 @@ class HealingMusicViewController: BaseViewController, HealingMusicView {
         tableView.register(UINib(nibName: homeCellType, bundle: nil), forCellReuseIdentifier: homeCellType)
         tableView.register(UINib(nibName: mediaCellType, bundle: nil), forCellReuseIdentifier: mediaCellType)
 
-        
-        
-        tableView.backgroundView = flowerTableViewBackground()
-        tableView.backgroundColor = UIColor.clear
         addShareButton()
         
         presenter.viewDidLoad()

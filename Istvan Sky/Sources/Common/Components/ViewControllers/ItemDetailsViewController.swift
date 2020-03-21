@@ -33,6 +33,27 @@ class ItemDetailsViewController: BaseViewController {
         return false
     }
     
+    func updateColors(to traitCollection: UITraitCollection) {
+        if #available(iOS 12.0, *) {
+            if traitCollection.userInterfaceStyle == .dark {
+                view.backgroundColor = .darkGrayColor()
+                if textView != nil {
+                    textView.textColor = .lightGray
+                }
+                return
+            }
+        }
+        
+        view.backgroundColor = .white
+        if textView != nil {
+            textView.textColor = .darkGray
+        }
+    }
+    
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        updateColors(to: newCollection)
+    }
+
     func layoutComponents() {
         let allSubviews = allScrollViewSubviews()
         if let scrollView = scrollView?.superview {
@@ -42,7 +63,6 @@ class ItemDetailsViewController: BaseViewController {
             scrollView.removeFromSuperview()
         }
 
-        view.backgroundColor = UIColor.white
         scrollView = UIScrollView(frame: CGRect.zero)
         
         view.addSubview(scrollView)
@@ -95,11 +115,13 @@ class ItemDetailsViewController: BaseViewController {
                 previousSubview = subView
             }
         }
+        updateColors(to: traitCollection)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addShareButton()
+        updateColors(to: traitCollection)
     }
     
     deinit {
@@ -173,6 +195,7 @@ class ItemDetailsViewController: BaseViewController {
         titleLabel.text = viewModel?.title
         titleLabel.numberOfLines = 0
         titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        titleLabel.backgroundColor = .clear
         return titleLabel
     }
 
@@ -188,6 +211,7 @@ class ItemDetailsViewController: BaseViewController {
         customTextView.delegate = self
         customTextView.textContainer.lineFragmentPadding = 0
         customTextView.textContainerInset = .zero
+        customTextView.backgroundColor = .clear
         return customTextView
     }
 }

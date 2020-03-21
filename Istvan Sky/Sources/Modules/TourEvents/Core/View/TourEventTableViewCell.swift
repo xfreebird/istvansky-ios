@@ -38,15 +38,18 @@ class TourEventTableViewCell: UITableViewCell {
 
         moreButton.configure(title: NSLocalizedString("More...", comment: ""))
         moreButton.addTarget(self, action: #selector(moreButtonTap), for: .touchUpInside)
-        
+        moreButton.setTitleColor(.globalTintColor(), for: .normal)
+
         if UIDevice.current.userInterfaceIdiom == .pad {
             addToCalendarButton = UIButton()
             addToCalendarButton.configure(title: NSLocalizedString("Add to Calendar", comment: ""))
             addToCalendarButton.addTarget(self, action: #selector(addToCalendarButtonTap), for: .touchUpInside)
-            
+            addToCalendarButton.setTitleColor(.globalTintColor(), for: .normal)
+
             shareButton = UIButton()
             shareButton.configure(title: NSLocalizedString("Share", comment: ""))
             shareButton.addTarget(self, action: #selector(shareButtonTap), for: .touchUpInside)
+            shareButton.setTitleColor(.globalTintColor(), for: .normal)
 
             imageHeightConstraint.constant = 300
             moreButton.isHidden = true

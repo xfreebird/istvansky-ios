@@ -6,19 +6,23 @@ target 'Istvan Sky' do
   use_modular_headers!
 
   # Pods for Istvan Sky
-  pod 'Fabric'
-  pod 'Crashlytics'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
   pod 'Firebase/Performance'
   pod 'Firebase/Core'
   pod 'Firebase/Storage'
   pod 'Firebase/Messaging'
-  pod 'Firebase/InAppMessagingDisplay'
-  pod 'SnapKit', '~> 4.2.0'
+  pod 'Firebase/InAppMessaging'
+  pod 'SnapKit', '~> 5.0'
   pod 'Marshal', :modular_headers => true
   pod 'Swinject'
-  pod 'SDWebImage', '~> 4.0'
-  pod 'XCDYouTubeKit', '~> 2.7'
+  pod 'SDWebImage', '~> 5.6'
+  pod 'XCDYouTubeKit', '~> 2.12'
   pod 'YoutubeKit', :git => 'https://github.com/xfreebird/YoutubeKit.git', :branch => 'master'
+end
+
+target 'NSE' do
+  pod 'Firebase/Messaging'
 end
 
 post_install do |installer|

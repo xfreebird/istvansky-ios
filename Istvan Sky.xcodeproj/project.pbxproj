@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,6 +36,7 @@
 		B0B042852B7DDA8E1372682C /* HealingMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 051EF7479EA08DFAD5777C9A /* HealingMusicViewController.xib */; };
 		B5F5A89E62ECF92B4BB4039A /* MainMenuBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6E006A90CBCFD77E725E9 /* MainMenuBuilder.swift */; };
 		BF75EE7F16BA25073BA6713A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB89EC85B5DE20A69113083D /* HomePresenter.swift */; };
+		C2295B0033CB7E0918F51005 /* libPods-NSE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E991F95D1DCDE14668471AEC /* libPods-NSE.a */; };
 		D10BDFE221E543A9007BFA69 /* Istvan_SkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BDFE121E543A9007BFA69 /* Istvan_SkyUITests.swift */; };
 		D10BDFEA21E543CA007BFA69 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BDFE921E543CA007BFA69 /* SnapshotHelper.swift */; };
 		D12FDE4D21E23E47006646DF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FDE4C21E23E47006646DF /* BaseViewController.swift */; };
@@ -56,6 +57,8 @@
 		D13731AD21D565710052C259 /* AshramBlogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D13731AB21D565710052C259 /* AshramBlogViewController.xib */; };
 		D13731B021D56E280052C259 /* TourEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13731AE21D56E280052C259 /* TourEventTableViewCell.swift */; };
 		D13731B121D56E280052C259 /* TourEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D13731AF21D56E280052C259 /* TourEventTableViewCell.xib */; };
+		D13E286B24264A8200DCD2E8 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E286A24264A8200DCD2E8 /* NotificationService.swift */; };
+		D13E286F24264A8200DCD2E8 /* NSE.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D13E286824264A8200DCD2E8 /* NSE.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D148FBF021DAC55800396068 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D148FBEF21DAC55800396068 /* GoogleService-Info.plist */; };
 		D148FBF221DC113900396068 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FBF121DC113900396068 /* ItemDetailsViewController.swift */; };
 		D148FBF621DCBDD200396068 /* BasicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148FBF521DCBDD200396068 /* BasicItem.swift */; };
@@ -124,6 +127,13 @@
 			remoteGlobalIDString = D137316221D16B8B0052C259;
 			remoteInfo = "Istvan Sky";
 		};
+		D13E286D24264A8200DCD2E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D137315B21D16B8B0052C259 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D13E286724264A8200DCD2E8;
+			remoteInfo = NSE;
+		};
 		D148FC1921DD462D00396068 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D137315B21D16B8B0052C259 /* Project object */;
@@ -132,6 +142,20 @@
 			remoteInfo = "Istvan Sky";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D13E287024264A8200DCD2E8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D13E286F24264A8200DCD2E8 /* NSE.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		051EF7479EA08DFAD5777C9A /* HealingMusicViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = HealingMusicViewController.xib; sourceTree = "<group>"; };
@@ -153,6 +177,7 @@
 		4D4B0C1AD9DC9781F35E12FC /* TourEventsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TourEventsRouter.swift; sourceTree = "<group>"; };
 		5741B0D2BF2CFC5A3B7E5D5A /* HealingMusicRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealingMusicRouter.swift; sourceTree = "<group>"; };
 		67647690A86FECABF6E3304C /* HealingMusicInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HealingMusicInteractor.swift; sourceTree = "<group>"; };
+		726C6FD721A909EC23A8D0FA /* Pods-NSE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSE.release.xcconfig"; path = "Pods/Target Support Files/Pods-NSE/Pods-NSE.release.xcconfig"; sourceTree = "<group>"; };
 		76FCE13921E8ED6C00158D93 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		7881AE79759F20139433745A /* TourEventsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TourEventsPresenter.swift; sourceTree = "<group>"; };
 		7ED7489385102DD576EF6297 /* DonatePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DonatePresenter.swift; sourceTree = "<group>"; };
@@ -191,6 +216,9 @@
 		D13731AB21D565710052C259 /* AshramBlogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AshramBlogViewController.xib; sourceTree = "<group>"; };
 		D13731AE21D56E280052C259 /* TourEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourEventTableViewCell.swift; sourceTree = "<group>"; };
 		D13731AF21D56E280052C259 /* TourEventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourEventTableViewCell.xib; sourceTree = "<group>"; };
+		D13E286824264A8200DCD2E8 /* NSE.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NSE.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13E286A24264A8200DCD2E8 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		D13E286C24264A8200DCD2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D148FBEF21DAC55800396068 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D148FBF121DC113900396068 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
 		D148FBF521DCBDD200396068 /* BasicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicItem.swift; sourceTree = "<group>"; };
@@ -244,7 +272,9 @@
 		D1EF0F4821E4ECC1009D6EC6 /* FileManagerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerUtils.swift; sourceTree = "<group>"; };
 		D1F6CDB421E3B9910026AFB6 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		D1F6CDB521E3B9910026AFB6 /* DonateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateViewController.xib; sourceTree = "<group>"; };
+		D659D7789886843C0DEE2989 /* Pods-NSE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NSE/Pods-NSE.debug.xcconfig"; sourceTree = "<group>"; };
 		DCD5159AF5AB59114433157E /* libPods-Istvan Sky.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Istvan Sky.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E991F95D1DCDE14668471AEC /* libPods-NSE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NSE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D0513D8333A9D9ED8C1F25 /* HomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ED4E1F69D47460D1F6EFB0E1 /* Pods-Istvan Sky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Istvan Sky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Istvan Sky/Pods-Istvan Sky.debug.xcconfig"; sourceTree = "<group>"; };
 		F154704F4FF98D08DC944549 /* MoreViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
@@ -265,6 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				29EE10DDE2019D5814230858 /* libPods-Istvan Sky.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13E286524264A8200DCD2E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2295B0033CB7E0918F51005 /* libPods-NSE.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +540,7 @@
 			isa = PBXGroup;
 			children = (
 				DCD5159AF5AB59114433157E /* libPods-Istvan Sky.a */,
+				E991F95D1DCDE14668471AEC /* libPods-NSE.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -551,6 +590,8 @@
 			children = (
 				ED4E1F69D47460D1F6EFB0E1 /* Pods-Istvan Sky.debug.xcconfig */,
 				0E830AB91B4EF82FA5F71BF6 /* Pods-Istvan Sky.release.xcconfig */,
+				D659D7789886843C0DEE2989 /* Pods-NSE.debug.xcconfig */,
+				726C6FD721A909EC23A8D0FA /* Pods-NSE.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -613,6 +654,7 @@
 				D137316521D16B8B0052C259 /* Istvan Sky */,
 				D148FC1521DD462D00396068 /* Istvan SkyTests */,
 				D10BDFE021E543A9007BFA69 /* Istvan SkyUITests */,
+				D13E286924264A8200DCD2E8 /* NSE */,
 				D137316421D16B8B0052C259 /* Products */,
 				ADA774C9DE17754B248356AC /* Pods */,
 				8DB29B02B0D64115828A4A72 /* Frameworks */,
@@ -625,6 +667,7 @@
 				D137316321D16B8B0052C259 /* Istvan Sky.app */,
 				D148FC1421DD462C00396068 /* Istvan SkyTests.xctest */,
 				D10BDFDF21E543A9007BFA69 /* Istvan SkyUITests.xctest */,
+				D13E286824264A8200DCD2E8 /* NSE.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -638,6 +681,15 @@
 				D195596221D650C6002D7FA4 /* Istvan Sky.entitlements */,
 			);
 			path = "Istvan Sky";
+			sourceTree = "<group>";
+		};
+		D13E286924264A8200DCD2E8 /* NSE */ = {
+			isa = PBXGroup;
+			children = (
+				D13E286A24264A8200DCD2E8 /* NotificationService.swift */,
+				D13E286C24264A8200DCD2E8 /* Info.plist */,
+			);
+			path = NSE;
 			sourceTree = "<group>";
 		};
 		D148FBF321DCBDB100396068 /* Services */ = {
@@ -927,15 +979,35 @@
 				D137316121D16B8B0052C259 /* Resources */,
 				5121BAD56021A7F2C89642F5 /* [CP] Copy Pods Resources */,
 				D1EF0F4A21E522A8009D6EC6 /* Crashlytics */,
+				D13E287024264A8200DCD2E8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D13E286E24264A8200DCD2E8 /* PBXTargetDependency */,
 			);
 			name = "Istvan Sky";
 			productName = experiments;
 			productReference = D137316321D16B8B0052C259 /* Istvan Sky.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D13E286724264A8200DCD2E8 /* NSE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D13E287324264A8200DCD2E8 /* Build configuration list for PBXNativeTarget "NSE" */;
+			buildPhases = (
+				FDECA7636DCB80D6784AB392 /* [CP] Check Pods Manifest.lock */,
+				D13E286424264A8200DCD2E8 /* Sources */,
+				D13E286524264A8200DCD2E8 /* Frameworks */,
+				D13E286624264A8200DCD2E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSE;
+			productName = NSE;
+			productReference = D13E286824264A8200DCD2E8 /* NSE.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		D148FC1321DD462C00396068 /* Istvan SkyTests */ = {
 			isa = PBXNativeTarget;
@@ -961,16 +1033,18 @@
 		D137315B21D16B8B0052C259 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = GMBN;
 				TargetAttributes = {
 					D10BDFDE21E543A9007BFA69 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = D137316221D16B8B0052C259;
 					};
 					D137316221D16B8B0052C259 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -980,8 +1054,12 @@
 							};
 						};
 					};
+					D13E286724264A8200DCD2E8 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					D148FC1321DD462C00396068 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = D137316221D16B8B0052C259;
 					};
 				};
@@ -1002,6 +1080,7 @@
 				D137316221D16B8B0052C259 /* Istvan Sky */,
 				D148FC1321DD462C00396068 /* Istvan SkyTests */,
 				D10BDFDE21E543A9007BFA69 /* Istvan SkyUITests */,
+				D13E286724264A8200DCD2E8 /* NSE */,
 			);
 		};
 /* End PBXProject section */
@@ -1038,6 +1117,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D13E286624264A8200DCD2E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D148FC1221DD462C00396068 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1054,22 +1140,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Istvan Sky/Pods-Istvan Sky-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessagingDisplay/InAppMessagingDisplayResources.bundle",
-				"${PODS_ROOT}/YoutubeKit/YoutubeKit/player.html",
+				"${PODS_ROOT}/Target Support Files/Pods-Istvan Sky/Pods-Istvan Sky-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/InAppMessagingDisplayResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/player.html",
+				"${PODS_ROOT}/Target Support Files/Pods-Istvan Sky/Pods-Istvan Sky-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Istvan Sky/Pods-Istvan Sky-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Istvan Sky/Pods-Istvan Sky-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1EF0F4A21E522A8009D6EC6 /* Crashlytics */ = {
@@ -1089,7 +1168,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+			shellScript = "[[ \"${CONFIGURATION}\" == \"Debug\" ]] || find \"${DWARF_DSYM_FOLDER_PATH}\" -name \"*.dSYM\" | xargs -I {} \"${PODS_ROOT}/FirebaseCrashlytics/upload-symbols\" -d -gsp \"${PROJECT_DIR}/tenantConfig/resources/GoogleService-Info.plist\" -p ios \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\" {}; exit 0\n";
 		};
 		DF93B2EF10052D1516EC5BA7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1107,6 +1186,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Istvan Sky-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDECA7636DCB80D6784AB392 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NSE-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1218,6 +1319,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D13E286424264A8200DCD2E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13E286B24264A8200DCD2E8 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D148FC1021DD462C00396068 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1233,6 +1342,11 @@
 			isa = PBXTargetDependency;
 			target = D137316221D16B8B0052C259 /* Istvan Sky */;
 			targetProxy = D10BDFE421E543A9007BFA69 /* PBXContainerItemProxy */;
+		};
+		D13E286E24264A8200DCD2E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D13E286724264A8200DCD2E8 /* NSE */;
+			targetProxy = D13E286D24264A8200DCD2E8 /* PBXContainerItemProxy */;
 		};
 		D148FC1A21DD462D00396068 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1274,7 +1388,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ghimbovschi.Istvan-SkyUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Istvan Sky";
 			};
@@ -1293,7 +1407,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ghimbovschi.Istvan-SkyUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Istvan Sky";
 			};
@@ -1426,6 +1540,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Istvan Sky/Istvan Sky.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = H86U5Z8HYB;
 				INFOPLIST_FILE = "Istvan Sky/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1433,10 +1548,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.istvansky.app.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1450,6 +1566,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Istvan Sky/Istvan Sky.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = H86U5Z8HYB;
 				INFOPLIST_FILE = "Istvan Sky/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1457,10 +1574,59 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.istvansky.app.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D13E287124264A8200DCD2E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D659D7789886843C0DEE2989 /* Pods-NSE.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = H86U5Z8HYB;
+				INFOPLIST_FILE = NSE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.istvansky.app.ios.NSE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D13E287224264A8200DCD2E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 726C6FD721A909EC23A8D0FA /* Pods-NSE.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = H86U5Z8HYB;
+				INFOPLIST_FILE = NSE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.istvansky.app.ios.NSE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1480,7 +1646,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ghimbovschi.Istvan-SkyTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Istvan Sky.app/Istvan Sky";
 			};
@@ -1501,7 +1667,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ghimbovschi.Istvan-SkyTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Istvan Sky.app/Istvan Sky";
 			};
@@ -1533,6 +1699,15 @@
 			buildConfigurations = (
 				D137317621D16B8D0052C259 /* Debug */,
 				D137317721D16B8D0052C259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D13E287324264A8200DCD2E8 /* Build configuration list for PBXNativeTarget "NSE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13E287124264A8200DCD2E8 /* Debug */,
+				D13E287224264A8200DCD2E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -26,6 +26,7 @@ class FLCollectionViewTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        collectionView.backgroundColor = superview?.backgroundColor
         let cellType = String(describing: FLBasicItemCollectionViewCell.self)
         collectionView.register(UINib(nibName: cellType, bundle: nil),
                                 forCellWithReuseIdentifier: String(describing: cellType))

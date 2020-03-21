@@ -29,8 +29,6 @@ class HomeViewController: BaseViewController, HomeView, UITableViewDelegate {
         tableView.register(UINib(nibName: feedCellType, bundle: nil), forCellReuseIdentifier: feedCellType)
         tableView.register(UINib(nibName: homeCellType, bundle: nil), forCellReuseIdentifier: homeCellType)
         
-        tableView.backgroundView = nil
-        tableView.backgroundColor = UIColor.clear
         tableView.refreshControl = refreshControl
         addShareButton()
         

@@ -24,6 +24,10 @@ extension UIColor {
         return UIColor(r: 253, g: 165, b: 41)
     }
     
+    static func darkGrayColor() -> UIColor {
+        return UIColor(r: 28, g: 28, b: 30)
+    }
+    
     static func actionButtonBorderColor() -> UIColor {
         return UIColor(r: 208, g: 93, b: 47)
     }

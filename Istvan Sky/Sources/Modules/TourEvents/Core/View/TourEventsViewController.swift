@@ -32,8 +32,6 @@ class TourEventsViewController: BaseViewController, TourEventsView {
         
         tableView.register(UINib(nibName: itemCellType, bundle: nil), forCellReuseIdentifier: itemCellType)
         
-        tableView.backgroundColor = UIColor.clear
-        tableView.backgroundView = flowerTableViewBackground()
         tableView.refreshControl = refreshControl
         presenter.viewDidLoad()
     }

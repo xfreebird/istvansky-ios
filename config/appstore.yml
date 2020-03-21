@@ -8,9 +8,29 @@ Istvan Sky.xcodeproj:
     Istvan Sky:
       PRODUCT_BUNDLE_IDENTIFIER: ${BUNDLE_ID}
       PROVISIONING_PROFILE_SPECIFIER: match AppStore $(PRODUCT_BUNDLE_IDENTIFIER)
+    NSE:
+      PRODUCT_BUNDLE_IDENTIFIER: ${BUNDLE_ID}.NSE
+      PROVISIONING_PROFILE_SPECIFIER: match AppStore $(PRODUCT_BUNDLE_IDENTIFIER)
 
 Istvan Sky/Info.plist:
   CFBundleDisplayName: Istvan Sky
 
 Istvan Sky/FastlaneDemo.entitlements:
   aps-environment: production
+
+Istvan Sky/Resources/GoogleService-Info.plist:
+  CLIENT_ID: 590121688667-vr8in5obq36a9clr9le60vcdqd735lh0.apps.googleusercontent.com
+  REVERSED_CLIENT_ID: com.googleusercontent.apps.590121688667-vr8in5obq36a9clr9le60vcdqd735lh0
+  API_KEY: AIzaSyAA-s2NxPqfDLF8KihKU4mI2ei0Tp0CjAc
+  GCM_SENDER_ID: '590121688667'
+  PLIST_VERSION: '1'
+  BUNDLE_ID: com.istvansky.app.ios
+  PROJECT_ID: istvan-sky-beta
+  STORAGE_BUCKET: istvan-sky-beta.appspot.com
+  IS_ADS_ENABLED: false
+  IS_ANALYTICS_ENABLED: false
+  IS_APPINVITE_ENABLED: true
+  IS_GCM_ENABLED: true
+  IS_SIGNIN_ENABLED: true
+  GOOGLE_APP_ID: 1:590121688667:ios:d5649e17201965cf
+  DATABASE_URL: https://istvan-sky-beta.firebaseio.com
