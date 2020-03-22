@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D42AB6EA0ECCF4773BF172CC"
-               BuildableName = "Istvan Sky.app"
-               BlueprintName = "Istvan Sky"
+               BlueprintIdentifier = "F50DA06163DD5F3F96CA2412"
+               BuildableName = "Istvan SkyTests.xctest"
+               BlueprintName = "Istvan SkyTests"
                ReferencedContainer = "container:Istvan Sky.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,23 +40,13 @@
                ReferencedContainer = "container:Istvan Sky.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C1B5DD487AA189D5AA7757C0"
-               BuildableName = "Istvan SkyUITests.xctest"
-               BlueprintName = "Istvan SkyUITests"
-               ReferencedContainer = "container:Istvan Sky.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D42AB6EA0ECCF4773BF172CC"
-            BuildableName = "Istvan Sky.app"
-            BlueprintName = "Istvan Sky"
+            BlueprintIdentifier = "F50DA06163DD5F3F96CA2412"
+            BuildableName = "Istvan SkyTests.xctest"
+            BlueprintName = "Istvan SkyTests"
             ReferencedContainer = "container:Istvan Sky.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -81,9 +71,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D42AB6EA0ECCF4773BF172CC"
-            BuildableName = "Istvan Sky.app"
-            BlueprintName = "Istvan Sky"
+            BlueprintIdentifier = "F50DA06163DD5F3F96CA2412"
+            BuildableName = "Istvan SkyTests.xctest"
+            BlueprintName = "Istvan SkyTests"
             ReferencedContainer = "container:Istvan Sky.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -102,9 +92,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D42AB6EA0ECCF4773BF172CC"
-            BuildableName = "Istvan Sky.app"
-            BlueprintName = "Istvan Sky"
+            BlueprintIdentifier = "F50DA06163DD5F3F96CA2412"
+            BuildableName = "Istvan SkyTests.xctest"
+            BlueprintName = "Istvan SkyTests"
             ReferencedContainer = "container:Istvan Sky.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

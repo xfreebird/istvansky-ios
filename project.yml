@@ -1,0 +1,63 @@
+name: Istvan Sky
+settings:
+  BUNDLE_ID: com.istvansky.app.ios
+targets:
+  NSE:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "10.0"
+    sources:
+      - NSE
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: "${BUNDLE_ID}.NSE"
+      MARKETING_VERSION: 1.1
+      CURRENT_PROJECT_VERSION: 1
+
+  Istvan Sky:
+    type: application
+    platform: iOS
+    deploymentTarget: "10.0"
+    sources: 
+      - Istvan Sky
+      - path: Istvan Sky/Resources/appdata
+        type: folder
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: "${BUNDLE_ID}"
+      MARKETING_VERSION: 1.1
+      CURRENT_PROJECT_VERSION: 1
+    dependencies:
+      - target: NSE
+    scheme:
+      gatherCoverageData: true
+      testTargets:
+        - name: Istvan SkyTests
+        - name: Istvan SkyUITests
+    postBuildScripts:
+      - script: |
+          [[ "${CONFIGURATION}" == "Debug" ]] || find "${DWARF_DSYM_FOLDER_PATH}" -name "*.dSYM" | xargs -I {} "${PODS_ROOT}/FirebaseCrashlytics/upload-symbols" -d -gsp "${PROJECT_DIR}/tenantConfig/resources/GoogleService-Info.plist" -p ios "${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}" {}; exit 0
+        name: Upload dSYMs to FirebaseCrashlytics
+
+  Istvan SkyTests:
+    platform: iOS
+    type: bundle.unit-test
+    sources:
+      - Istvan SkyTests/
+    dependencies:
+      - target: Istvan Sky
+    scheme:
+      gatherCoverageData: true
+      testTargets:
+        - name: Istvan SkyTests
+
+  Istvan SkyUITests:
+    platform: iOS
+    type: bundle.ui-testing
+    sources:
+      - Istvan SkyUITests/
+    dependencies:
+      - target: Istvan Sky
+    scheme:
+      gatherCoverageData: true
+      testTargets:
+        - name: Istvan SkyUITests
+
